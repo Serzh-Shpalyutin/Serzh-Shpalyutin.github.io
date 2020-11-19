@@ -4,4 +4,6 @@
 
 по поводу сотрудничества можно писать в соц. сети или почту serzh.shpalyutin@mail.ru
 
-[Сайт Викинги](https://serzh-shpalyutin.github.io/vikings/)
+[Сайт Викинги](https://serzh-shpalyutin.github.io/vikings/) 
+
+[Интернет-Магазин Модерно](https://Serzh-Shpalyutin.github.io/moderno/)
