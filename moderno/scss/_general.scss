@@ -1,0 +1,137 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html,
+body {
+    height: 100%;
+    position: relative;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    color: $color-text;
+    background-color: #fff;
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+
+.content {
+	flex: 1 0 auto;
+}
+
+.footer {
+	flex: 0 0 auto;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: $color-text;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.container-fluid {
+    width: 100%;
+    padding: 0 30px;
+    margin: 0 auto;
+}
+
+@media (max-width: 720px) {
+    .container-fluid {
+        padding: 0 15px;
+    }
+}
+
+.title {
+    color: $bg-color;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 60px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.rate-star {
+    display: inline-block;
+    margin-right: 13px;
+}
+
+.page-content {
+    background-color: #f4f6f5;
+}
+
+.breadcrumbs {
+    &__inner {
+        padding: 45px 0px 40px;
+    }
+
+    &__list {
+        margin: 0;
+        padding: 0; 
+    }
+
+    &__item {
+        display: inline-block;
+        position: relative;
+
+        & + & {
+            padding-left: 24px;
+
+            &::before {
+                content: "-";
+                position: absolute;
+                left: 8px;
+                color: $color-green;
+            }
+        }
+
+        &:last-child {
+            .breadcrumbs__link,
+            span {
+                color: #3e474c;
+            }
+        }
+    }
+
+    &__link {
+        color: #b0bec5;
+    }
+}
+
+.angle-right {
+    position: relative;
+    padding-left: 15px;
+    &::before {
+        content: "\e903";
+        font-family: 'icomoon';
+        position: absolute;
+        left: 0;
+        color: $color-green;
+        font-size: 14px;
+    }
+}
+
+#modal {
+    display: none;
+}
