@@ -6,6 +6,6 @@
 
 [Сайт Викинги](https://serzh-shpalyutin.github.io/vikings/) 
 
-[Интернет-Магазин Модерно](https://Serzh-Shpalyutin.github.io/moderno/) Serzh-Shpalyutin.github.io/tesla/
+[Интернет-Магазин Модерно](https://Serzh-Shpalyutin.github.io/moderno/)
 
 [Промо сайт тесла](https://Serzh-Shpalyutin.github.io/tesla/)
