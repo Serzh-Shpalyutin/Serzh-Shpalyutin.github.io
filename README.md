@@ -8,4 +8,6 @@
 
 [Интернет-Магазин Модерно](https://Serzh-Shpalyutin.github.io/moderno/)
 
-[Промо сайт тесла](https://Serzh-Shpalyutin.github.io/tesla/)
+[Промо сайт тесла](https://Serzh-Shpalyutin.github.io/tesla/) 
+
+[Mavic 2 Pro](https://serzh-shpalyutin.github.io/mavic/)
