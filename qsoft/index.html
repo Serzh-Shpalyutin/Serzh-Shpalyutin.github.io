@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Qsoft</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <div class="content">
+      <header class="header">
+        <div class="container">
+          <div class="header__inner">
+            <div class="logo">
+              <a class="logo__link" href="#"><img class="logo__header-img" src="images/logo.svg" alt="Логотип"></a>
+            </div>
+            <form class="search">
+              <input class="search__input" type="search" placeholder="Найти на сайте...">
+              <button class="search__btn">
+                <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M12 6.5C12 9.53757 9.53757 12 6.5 12C3.46243 12 1 9.53757 1 6.5C1 3.46243 3.46243 1 6.5 1C9.53757 1 12 3.46243 12 6.5ZM10.5691 11.5691C9.45527 12.4643 8.0402 13 6.5 13C2.91015 13 0 10.0899 0 6.5C0 2.91015 2.91015 0 6.5 0C10.0899 0 13 2.91015 13 6.5C13 8.18955 12.3554 9.72854 11.2987 10.8844L15.3536 14.9393C15.5488 15.1346 15.5488 15.4512 15.3536 15.6464C15.1583 15.8417 14.8417 15.8417 14.6464 15.6464L10.5691 11.5691Z" />
+                </svg>
+              </button>
+            </form>
+            <div class="header__info">
+              <a class="header__phone" href="tel:89996660013">8 (999) 666-00-13</a>
+              <time class="header__time">Звоните с 8 до 23!</time>
+            </div>
+            <a class="btn btn--blue" href="#">Войти</a>
+          </div>
+
+        </div>
+        <nav class="menu">
+          <div class="container">
+            <div class="menu__btn">
+              <span class="menu__btn-line"></span>
+            </div>
+            <ul class="menu__list">
+              <li class="menu__item"><a class="menu__link menu__link--active" href="#">Акции</a></li>
+              <li class="menu__item"><a class="menu__link" href="#">Товары</a></li>
+              <li class="menu__item"><a class="menu__link" href="#">Доставка и оплата</a></li>
+              <li class="menu__item"><a class="menu__link" href="#">Гарантия</a></li>
+              <li class="menu__item"><a class="menu__link" href="#">О нас</a></li>
+              <li class="menu__item"><a class="menu__link" href="#">Контакты</a></li>
+              <li class="menu__item menu__item-phone"><a class="menu__link menu__link-phone" href="#">8 (999) 666-00-13</a></li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+
+      <main>
+
+        <section class="popular-products">
+          <div class="container">
+            <div class="title">
+              Популярные товары
+            </div>
+            <div class="popular-products__inner">
+
+              <article class="popular-products__item">
+                <div class="popular-products__head">
+                  <ul class="popular-products__tags">
+                    <li class="popular-products__tags-item">Акция</li>
+                    <li class="popular-products__tags-item popular-products__tags-item--red">Хит</li>
+                    <li class="popular-products__tags-item popular-products__tags-item--violet">Лучшая цена</li>
+                  </ul>
+                  <img class="popular-products__img" src="images/popular/item-1.jpg" alt="">
+                </div>
+                <div class="popular-products__content">
+
+                  <div class="popular-products__title">
+                    <a href="#">Цветок, который стоит на столе, такой загадочный.</a>
+                  </div>
+                  <p class="popular-products__text">
+                    А тут описание цветка, придающее ему загадочности и вызывающее интерес пользователя
+                  </p>
+                  <div class="popular-products__info">
+                    <div class="popular-products__price">
+                      <span class="popular-products__old-price">1 499 ₽</span>
+                      799 ₽
+                    </div>
+                    <button class="popular-products__btn"></button>
+                  </div>
+
+                </div>
+              </article>
+
+              <article class="popular-products__item">
+                <div class="popular-products__head">
+                  <ul class="popular-products__tags">
+                    <li class="popular-products__tags-item">Акция</li>
+                  </ul>
+                  <img class="popular-products__img" src="images/popular/item-2.jpg" alt="">
+                </div>
+                <div class="popular-products__content">
+
+                  <div class="popular-products__title">
+                    <a href="#">Набор юного инстаблогера</a>
+                  </div>
+                  <p class="popular-products__text">
+                    Посмотрите на него.
+                    Он покажет всем какой вы классный и творческий. Главное не забыть посидеть на подоконнике с
+                    бокаль...
+                  </p>
+                  <div class="popular-products__info">
+                    <div class="popular-products__price">
+                      13 666 ₽
+                    </div>
+                    <button class="popular-products__btn"></button>
+                  </div>
+
+                </div>
+              </article>
+
+              <article class="popular-products__item">
+                <div class="popular-products__head">
+                  <ul class="popular-products__tags">
+                    <li class="popular-products__tags-item popular-products__tags-item--red">Хит</li>
+                  </ul>
+                  <img class="popular-products__img" src="images/popular/item-3.jpg" alt="">
+                </div>
+                <div class="popular-products__content">
+
+                  <div class="popular-products__title">
+                    <a href="#">Лампа. Просто лампа.</a>
+                  </div>
+                  <p class="popular-products__text">
+                    В паре с загадочным цветком добавит загадочности вашему интерьеру
+                  </p>
+                  <div class="popular-products__info">
+                    <div class="popular-products__price">
+                      <span class="popular-products__old-price">2 699 ₽</span>
+                      1 789 ₽
+                    </div>
+                    <button class="popular-products__btn"></button>
+                  </div>
+
+                </div>
+              </article>
+
+              <article class="popular-products__item">
+                <div class="popular-products__head">
+                  <ul class="popular-products__tags">
+                    <li class="popular-products__tags-item">Акция</li>
+                    <li class="popular-products__tags-item popular-products__tags-item--red">Хит</li>
+                  </ul>
+                  <img class="popular-products__img" src="images/popular/item-4.jpg" alt="">
+                </div>
+                <div class="popular-products__content">
+
+                  <div class="popular-products__title">
+                    <a href="#">Классные деревянные минималистичные часы с...</a>
+                  </div>
+                  <p class="popular-products__text">
+                    Все в ту же копилку загдочности вашего интерьера и вашей натуры
+                  </p>
+                  <div class="popular-products__info">
+                    <div class="popular-products__price">
+                      <span class="popular-products__old-price">2 199 ₽</span>
+                      1 899 ₽
+                    </div>
+                    <button class="popular-products__btn"></button>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <a class="btn btn--right" href="#">
+              Смотреть каталог
+              <svg width="16" height="14" viewBox="0 0 16 14" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M7.76365 0.36361C7.41218 0.715082 7.41218 1.28493 7.76365 1.6364L12.2273 6.10001H0.900049C0.402993 6.10001 4.95911e-05 6.50295 4.95911e-05 7.00001C4.95911e-05 7.49706 0.402993 7.90001 0.900049 7.90001H12.2273L7.76365 12.3636C7.41218 12.7151 7.41218 13.2849 7.76365 13.6364C8.11512 13.9879 8.68497 13.9879 9.03644 13.6364L15.0364 7.6364C15.3879 7.28493 15.3879 6.71508 15.0364 6.36361L9.03644 0.36361C8.68497 0.0121381 8.11512 0.0121381 7.76365 0.36361Z" />
+              </svg>
+            </a>
+          </div>
+        </section>
+
+        <section class="news">
+          <div class="container">
+            <div class="title">Новости компании</div>
+            <div class="news__items">
+
+              <article class="news__item ">
+                <a href="#">
+                  <div class="news__content">
+                    <div class="news__title">
+                      Цветок, который стоит на столе, такой загадочный.
+                    </div>
+                    <p class="news__text">
+                      А тут описание цветка, придающее ему загадочности и вызывающее интерес пользователя
+                    </p>
+                  </div>
+                </a>
+              </article>
+
+              <article class="news__item news__item--big news__item--violet">
+                <a href="#">
+                  <div class="news-image">
+                    <img class="news__img" src="images/news/new-1.jpg" alt="">
+                  </div>
+                  <div class="news__content news__content--center">
+                    <div class="news__title">
+                      Длинный заголовок большой новости
+                    </div>
+                    <p class="news__text">
+                      А тут описание цветка, придающее ему загадочности и вызывающее интерес пользователя
+                    </p>
+                  </div>
+                </a>
+              </article>
+
+              <article class="news__item news__item--big news__item--blue">
+                <a href="">
+                  <div class="news-image">
+                    <img class="news__img" src="images/news/new-2.jpg" alt="">
+                  </div>
+                  <div class="news__content news__content--center">
+                    <div class="news__title">
+                      Длинный заголовок большой новости
+                    </div>
+                    <p class="news__text">
+                      А тут описание цветка, придающее ему загадочности и вызывающее интерес пользователя
+                    </p>
+                  </div>
+                </a>
+              </article>
+
+              <article class="news__item news__item--red">
+                <a href="#">
+                  <div class="news__content">
+                    <div class="news__title">
+                      Цветок, который стоит на столе, такой загадочный.
+                    </div>
+                    <p class="news__text">
+                      А тут описание цветка, придающее ему загадочности и вызывающее интерес пользователя
+                    </p>
+                  </div>
+                </a>
+              </article>
+
+            </div>
+
+            <a class="btn btn--right" href="">
+              Смотреть все новости
+              <svg width="16" height="14" viewBox="0 0 16 14" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M7.76365 0.36361C7.41218 0.715082 7.41218 1.28493 7.76365 1.6364L12.2273 6.10001H0.900049C0.402993 6.10001 4.95911e-05 6.50295 4.95911e-05 7.00001C4.95911e-05 7.49706 0.402993 7.90001 0.900049 7.90001H12.2273L7.76365 12.3636C7.41218 12.7151 7.41218 13.2849 7.76365 13.6364C8.11512 13.9879 8.68497 13.9879 9.03644 13.6364L15.0364 7.6364C15.3879 7.28493 15.3879 6.71508 15.0364 6.36361L9.03644 0.36361C8.68497 0.0121381 8.11512 0.0121381 7.76365 0.36361Z" />
+              </svg>
+            </a>
+
+          </div>
+        </section>
+
+        <section class="partners">
+          <div class="container">
+            <div class="title">Наши партнёры</div>
+            <div class="partners__inner">
+              <a class="partners__item" href="#">
+                <img class="partners__img" src="images/partners/henk.jpg" alt="">
+              </a>
+
+              <a class="partners__item" href="#">
+                <img class="partners__img" src="images/partners/jd.jpg" alt="">
+              </a>
+
+              <a class="partners__item" href="#">
+                <img class="partners__img" src="images/partners/McDonald's.jpg" alt="">
+              </a>
+
+              <a class="partners__item" href="#">
+                <img class="partners__img" src="images/partners/ikea.jpg" alt="">
+              </a>
+
+              <a class="partners__item" href="#">
+                <img class="partners__img" src="images/partners/reebok.jpg" alt="">
+              </a>
+
+              <a class="partners__item" href="#">
+                <img class="partners__img" src="images/partners/nike.jpg" alt="">
+              </a>
+
+              <a class="partners__item" href="#">
+                <img class="partners__img" src="images/partners/cater.jpg" alt="">
+              </a>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__inner">
+            <div class="footer__box">
+              <a class="footer__logo" href="#">
+                <svg width="135" height="28" viewBox="0 0 135 28" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M29.1771 26.741H22.0945L21.0937 25.4322C19.708 25.9711 18.4763 26.356 17.3985 26.664C16.3207 26.8949 15.1659 27.0489 13.8572 27.0489C9.54607 27.0489 6.15875 25.9711 3.77224 23.8925C1.23175 21.737 0 18.4266 0 14.1925C0 9.88136 1.15477 6.57103 3.38731 4.33849C5.69685 2.10594 9.16114 0.951172 13.8572 0.951172C18.3993 0.951172 21.8636 2.18292 24.2501 4.56944C26.3287 6.64802 27.3295 9.34247 27.3295 12.5758C27.3295 14.9623 27.2525 16.733 27.0215 17.8108C26.7136 19.5044 25.9437 21.1211 24.866 22.5838L29.1771 26.741ZM21.0937 13.9615C21.0937 11.652 20.6318 9.80438 19.631 8.34168C18.3993 6.49405 16.3977 5.57024 13.7802 5.57024C11.3167 5.57024 9.3921 6.2631 8.16035 7.7258C6.9286 9.11152 6.31272 11.1901 6.31272 13.8846C6.31272 16.8869 7.00558 19.1195 8.46828 20.5052C9.77702 21.737 11.7016 22.3528 14.2421 22.3528C16.5516 22.3528 18.2453 21.66 19.4001 20.2743C20.5548 18.8116 21.0937 16.733 21.0937 13.9615Z" />
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M55.8913 18.8116C55.8913 21.0441 55.1215 22.8917 53.6588 24.4314C52.1961 25.9711 50.3484 26.664 48.0389 26.664H30.3325V22.1219H45.0365C46.0373 22.1219 46.8841 21.8909 47.5 21.429C48.2699 20.8901 48.6548 20.1973 48.6548 19.2735C48.6548 17.1179 47.1151 16.0401 44.1127 16.0401H36.7222C34.5666 16.0401 32.719 15.3473 31.1023 14.0385C29.4857 12.7298 28.7158 11.0361 28.7158 8.95756C28.7158 6.72501 29.4857 4.87738 31.1023 3.49166C32.642 2.10595 34.7206 1.41309 37.3381 1.41309H54.3516V5.72421H39.2627C38.5698 5.72421 37.877 6.03215 37.2611 6.57104C36.4912 7.10993 36.1833 7.80279 36.1833 8.57263C36.1833 9.41946 36.4912 10.1893 37.1841 10.7282C37.877 11.3441 38.6468 11.575 39.5706 11.575H47.731C50.2715 11.575 52.273 12.2679 53.7358 13.5766C55.1985 14.8854 55.8913 16.656 55.8913 18.8116Z" />
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M84.9913 13.9616C84.9913 18.8886 83.6056 22.3529 80.9111 24.5084C78.6786 26.2021 75.4452 27.0489 71.2881 27.0489C66.592 27.0489 63.1277 26.0481 60.8952 24.1235C58.4317 21.968 57.2 18.5037 57.2 13.7306C57.2 9.80442 58.2777 6.72504 60.5103 4.56948C62.8968 2.18296 66.4381 1.0282 71.2111 1.0282C76.446 1.0282 80.0643 2.18296 82.2199 4.41551C84.0675 6.41711 84.9913 9.57346 84.9913 13.9616ZM78.5246 13.8076C78.5246 11.3441 77.9088 9.34251 76.754 7.87981C75.4452 6.26314 73.4437 5.41631 70.9032 5.41631C68.3627 5.41631 66.4381 6.26314 65.1293 8.03378C64.0516 9.49648 63.5127 11.4211 63.5127 13.7306C63.5127 16.4251 63.9746 18.4267 64.8214 19.7354C66.0532 21.506 68.2087 22.4299 71.519 22.4299C74.2905 22.4299 76.2151 21.583 77.2929 19.8124C78.1397 18.5806 78.5246 16.5021 78.5246 13.8076Z" />
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M110.319 16.1171H92.9201V26.587H86.6843V11.1131C86.6843 10.1893 86.8383 9.11153 87.2232 7.95676C87.9161 5.87818 89.2248 4.33849 91.1494 3.26071C93.382 2.02896 97.0772 1.41309 102.158 1.41309C113.013 1.41309 123.868 1.41309 134.723 1.41309V5.64723H125.33V26.587H119.48V5.64723C113.475 5.64723 107.778 5.57024 101.773 5.57024C99.4637 5.57024 97.8471 5.72421 96.9233 5.95517C95.3066 6.34009 94.2288 7.2639 93.5359 8.57263C92.997 9.57343 92.7661 10.6512 92.7661 11.883H110.319V16.1171Z" />
+                </svg>
+              </a>
+
+              <ul class="footer__social-list">
+                <li class="footer__social-item">
+                  <a class="footer__social-link" href="#">
+                    <svg width="31" height="30" viewBox="0 0 31 30" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M15.7227 0C7.43891 0 0.722656 6.71625 0.722656 15C0.722656 23.2838 7.43891 30 15.7227 30C24.0064 30 30.7227 23.2838 30.7227 15C30.7227 6.71625 24.0064 0 15.7227 0ZM21.2739 21.115C18.6464 21.295 12.7939 21.295 10.1702 21.115C7.32516 20.92 6.99391 19.5275 6.97266 15C6.99391 10.4637 7.32891 9.08 10.1702 8.885C12.7939 8.705 18.6477 8.705 21.2739 8.885C24.1202 9.08 24.4502 10.4725 24.4727 15C24.4502 19.5362 24.1164 20.92 21.2739 21.115ZM13.2227 12.0725L19.3689 14.995L13.2227 17.9275V12.0725Z" />
+                    </svg>
+                  </a>
+                </li>
+                <li class="footer__social-item">
+                  <a class="footer__social-link" href="#">
+                    <svg width="31" height="30" viewBox="0 0 31 30" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M19.2589 7.8775C18.3364 7.835 18.0589 7.8275 15.7227 7.8275C13.3864 7.8275 13.1102 7.83625 12.1877 7.8775C9.81391 7.98625 8.70891 9.11 8.60016 11.465C8.55891 12.3875 8.54891 12.6637 8.54891 15C8.54891 17.3363 8.55891 17.6125 8.60016 18.5363C8.70891 20.885 9.80891 22.015 12.1877 22.1237C13.1089 22.165 13.3864 22.175 15.7227 22.175C18.0602 22.175 18.3364 22.1662 19.2589 22.1237C21.6327 22.0162 22.7364 20.8888 22.8464 18.5363C22.8877 17.6138 22.8964 17.3363 22.8964 15C22.8964 12.6637 22.8877 12.3875 22.8464 11.465C22.7364 9.11125 21.6302 7.98625 19.2589 7.8775ZM15.7227 19.4937C13.2414 19.4937 11.2289 17.4825 11.2289 15C11.2289 12.5188 13.2414 10.5075 15.7227 10.5075C18.2039 10.5075 20.2164 12.5188 20.2164 15C20.2164 17.4813 18.2039 19.4937 15.7227 19.4937ZM20.3939 11.38C19.8139 11.38 19.3439 10.91 19.3439 10.33C19.3439 9.75 19.8139 9.28 20.3939 9.28C20.9739 9.28 21.4439 9.75 21.4439 10.33C21.4439 10.9087 20.9739 11.38 20.3939 11.38ZM18.6389 15C18.6389 16.6112 17.3327 17.9163 15.7227 17.9163C14.1127 17.9163 12.8064 16.6112 12.8064 15C12.8064 13.3888 14.1127 12.0837 15.7227 12.0837C17.3327 12.0837 18.6389 13.3888 18.6389 15ZM15.7227 0C7.43891 0 0.722656 6.71625 0.722656 15C0.722656 23.2838 7.43891 30 15.7227 30C24.0064 30 30.7227 23.2838 30.7227 15C30.7227 6.71625 24.0064 0 15.7227 0ZM24.4202 18.6075C24.2764 21.7887 22.5052 23.5513 19.3314 23.6975C18.3977 23.74 18.0989 23.75 15.7227 23.75C13.3464 23.75 13.0489 23.74 12.1152 23.6975C8.93516 23.5513 7.17141 21.7862 7.02516 18.6075C6.98266 17.675 6.97266 17.3762 6.97266 15C6.97266 12.6237 6.98266 12.3263 7.02516 11.3925C7.17141 8.2125 8.93641 6.44875 12.1152 6.30375C13.0489 6.26 13.3464 6.25 15.7227 6.25C18.0989 6.25 18.3977 6.26 19.3314 6.30375C22.5127 6.45 24.2777 8.21875 24.4202 11.3925C24.4627 12.3263 24.4727 12.6237 24.4727 15C24.4727 17.3762 24.4627 17.675 24.4202 18.6075Z" />
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+
+              <ul class="footer__info-list">
+                <li class="footer__info-item">
+                  <a class="footer__info-link" href="#">Правила</a>
+                </li>
+                <li class="footer__info-item">
+                  <a class="footer__info-link" href="#">Документы</a>
+                </li>
+                <li class="footer__info-item">
+                  <a class="footer__info-link" href="#">Политика конфиденциальности</a>
+                </li>
+              </ul>
+            </div>
+
+            <button class="btn btn--blue btn--phone">
+              Заказать звонок
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M8.02339 5.89537C8.48744 5.30347 8.65385 4.67965 8.12901 4.12901C6.95124 2.56918 6.15915 1.60458 5.66232 1.14005C4.71777 0.256923 3.16398 0.37638 2.34593 1.1393C1.90655 1.54906 1.7578 1.68978 1.30665 2.1235C-1.20631 4.50326 0.326225 9.53399 4.40026 13.3938C8.47337 17.2527 13.788 18.704 16.3063 16.3192C16.7226 15.9394 17.0751 15.6056 17.353 15.3275C18.1547 14.5255 18.2764 13.1197 17.3478 12.2065C16.8717 11.7382 15.8998 11.0247 14.1825 9.86201C13.6565 9.41686 13.0328 9.51334 12.4611 9.86838C12.186 10.0392 11.9859 10.2119 11.6079 10.57L10.9216 11.2199C10.8312 11.3055 9.60379 10.7237 8.41229 9.59489C7.22015 8.46543 6.60587 7.30362 6.69584 7.21847L7.38263 6.56808C7.50254 6.45448 7.55986 6.39948 7.63338 6.32634C7.78655 6.17398 7.91337 6.03571 8.02339 5.89537ZM12.1875 12.4188L12.8739 11.7688C13.0819 11.5717 13.2167 11.4505 13.3264 11.367C14.8308 12.3896 15.7021 13.0325 16.058 13.3825C16.2717 13.5927 16.2385 13.9761 16.0527 14.1619C15.7957 14.4191 15.4617 14.7353 15.0519 15.1095C13.4235 16.6514 9.13336 15.4798 5.6664 12.1952C2.19835 8.90949 0.961178 4.84833 2.57726 3.31789C3.02659 2.88595 3.16895 2.75128 3.60206 2.34736C3.76445 2.19591 4.20679 2.1619 4.40434 2.3466C4.78685 2.70425 5.49641 3.56416 6.5402 4.94034C6.48617 5.00384 6.41868 5.07559 6.33655 5.15729C6.27627 5.21726 6.22604 5.26544 6.11625 5.36946L5.43015 6.01921C4.26294 7.12386 5.25697 9.00393 7.14592 10.7935C9.03357 12.5819 11.0207 13.5238 12.1875 12.4188Z"
+                  fill="white" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </footer>
+
+
+
+    </div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="js/libs.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
