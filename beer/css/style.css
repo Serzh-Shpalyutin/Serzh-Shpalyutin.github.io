@@ -1,0 +1,337 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  color: #b4ba98;
+  background-color: #1a1c0f;
+  font-family: "Amiri", serif;
+  font-size: 24px;
+  line-height: 48px;
+  font-weight: 400;
+  position: relative;
+  overflow-x: hidden;
+  min-width: 320px;
+}
+
+.container {
+  max-width: 1560px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.page-ml {
+  margin-left: 15vh;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.wrapper {
+  position: relative;
+}
+
+/* start header */
+
+.header {
+  background-image: url(../images/bg-overlay.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+}
+
+.logo {
+  padding-top: 15vh;
+  padding-bottom: 13vh;
+}
+
+.logo__img {
+  transition: opacity 0.2s linear;
+}
+
+.logo__img:hover {
+  opacity: 0.5;
+}
+
+.top-title {
+  font-size: 60px;
+  line-height: 60px;
+  font-weight: 900;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: "Cinzel Decorative", cursive;
+  margin-bottom: 30px;
+}
+
+.top-subtitle {
+  font-size: 36px;
+  line-height: 60px;
+  color: #fff;
+  font-family: "Cinzel Decorative", cursive;
+}
+
+.top-subtitle__line {
+  color: #cdb378;
+  font-size: 18px;
+  line-height: 30px;
+  font-style: italic;
+  display: block;
+  font-family: "Cinzel Decorative", cursive;
+  margin-top: 20px;
+}
+
+.scroll-box {
+  max-width: 200px;
+  margin: 0 auto;
+}
+
+.btn-scroll {
+  display: inline-block;
+  margin-top: 20vh;
+  color: #cdb378;
+  font-size: 16px;
+  font-family: "Cinzel Decorative", cursive;
+  font-weight: 400;
+  transition: opacity 0.2s linear;
+}
+
+.btn-scroll:hover {
+  opacity: 0.5;
+}
+
+.btn-svg svg {
+  width: 75px;
+  height: 40px;
+  fill: #cdb378;
+  display: block;
+  margin: 0 auto;
+  transition: opacity 0.2s linear;
+}
+
+.btn-svg svg:hover {
+  opacity: 0.5;
+}
+
+/* end header */
+
+/* start main */
+
+.main {
+  position: absolute;
+  z-index: -1;
+  background-image: url(../images/Photo+BG.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  width: 100%;
+  min-height: 5267px;
+}
+
+/* end main */
+
+/* start about */
+
+.about {
+  position: relative;
+}
+
+.about::after {
+  content: "";
+  position: absolute;
+  background-image: url(../images/Beer.png);
+  width: 100%;
+  height: 100%;
+  top: 20vh;
+  right: 52vh;
+  width: 232px;
+  height: 917px;
+  z-index: 1;
+}
+
+.about__inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.page-title {
+  font-size: 72px;
+  line-height: 60px;
+  color: #fff;
+  font-family: "Cinzel Decorative", cursive;
+  margin: 100px 0 20px;
+}
+
+.page-title--color {
+  color: #cdb378;
+  margin: 90px 0 30px;
+}
+
+.page-subtitle {
+  font-size: 24px;
+  color: #cdb378;
+  max-width: 1040px;
+  width: 100%;
+}
+
+.about__img {
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+/* end about */
+
+/* start products */
+
+.products {
+  position: absolute;
+  top: 30vh;
+  left: -15vh;
+  background-image: url(../images/bg-products.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 1873px;
+  height: 783px;
+}
+
+.titles--mt {
+  margin-top: 30vh;
+  margin-left: 15vh;
+}
+
+.page-subtitle--mb {
+  margin-bottom: 55px;
+  color: #b4ba98;
+}
+
+.btn {
+  font-family: "Amiri", serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 16px;
+  color: #fff;
+  padding: 18px 70px;
+  border: 2px solid #404429;
+  background-color: #272a18;
+  margin-left: 15vh;
+  transition: background-color .2s linear;
+  cursor: pointer;
+  text-align: center;
+}
+
+.btn:hover {
+  background-color: #363a22;
+}
+
+/* end products */
+
+/* start promo */
+
+.promo {
+  margin-top: 268px;
+  background-image: url(../images/Prostokąt.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  min-height: 884px;
+}
+
+.promo-text {
+  margin-left: auto;
+  padding-top: 35vh;
+  font-size: 60px;
+  line-height: 72px;
+  color: #000;
+  font-family: "Cinzel Decorative", cursive;
+  font-weight: 900;
+  max-width: 580px;
+  width: 100%;
+}
+
+/* end promo */
+
+/* start product-info */
+
+.product-info__inner {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.product-info__descr {
+  max-width: 700px;
+  width: 100%; 
+}
+
+.product-info__title {
+  margin-bottom: 40px;
+  font-weight: 900;
+  line-height: 100px;
+}
+
+.product-info__text p {
+  margin: 0;
+}
+
+.product-info__image {
+  position: absolute;
+  right: -187px;
+  top: -25vh;
+}
+
+.product-info__img {
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+/* end product-info */
+
+/* start footer */
+
+.footer {
+  margin-top: 30vh;
+  text-align: center;
+}
+
+.page-subtitle--center {
+  margin: 0 auto;
+  color: #b4ba98;
+  margin-bottom: 40px;
+}
+
+.btn--sml {
+  color: #fff;
+  font-size: 16px;
+  padding: 14px 62px;
+  background-color: #1a190e;
+  border: 2px solid #404429;
+  transition: background-color .2s linear;
+  text-align: center;
+  cursor: pointer;
+}
+
+.btn--sml:hover {
+  background-color: #2a2818;
+}
+
+/* end footer */
+
+
+
