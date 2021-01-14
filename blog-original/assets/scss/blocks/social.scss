@@ -1,0 +1,22 @@
+.social {
+    display: flex;
+    justify-content: center;
+
+    @include breakpoint($tablet-bp) {
+        display: none;
+    }
+}
+
+.social__item {
+    margin: 0 .75rem;
+}
+
+.social__img {
+    height: 2.5rem;
+    width: 2.5rem;
+    transition: opacity .2s;
+
+    &:hover {
+        opacity: .8;
+    }
+}

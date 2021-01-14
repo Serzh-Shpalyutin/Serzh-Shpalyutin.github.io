@@ -1,0 +1,45 @@
+.related {
+    padding-bottom: .5rem;
+    border-bottom: 1px solid #1c1c1c;
+}
+
+.related__list {
+    display: flex;
+    flex-wrap: wrap;
+
+    @include breakpoint($mobile-bp) {
+        flex-direction: column;
+    }
+}
+
+.related__item {
+    width: 50%; 
+    margin-bottom: 2.5rem;
+
+    @include breakpoint($mobile-bp) {
+        width: 100%;
+    }
+}
+
+.related__link-title {
+    color: #F3EBA2;
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.related__link {
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.related__date {
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    color: #828282;
+}
