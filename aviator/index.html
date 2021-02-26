@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AVIATOR - База отдыха</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+
+    <link rel="stylesheet" href="css/lightgallery.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <a class="logo" href="#">
+                    <img class="logo__img" src="images/Aviator-mini.png" alt="">
+                </a>
+
+                <nav class="menu">
+                    <ul class="menu__list">
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">КОТТЕДЖИ</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">УСЛУГИ</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">ГАЛЕРЕЯ</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">О НАС</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">ЗАБРОНИРОВАТЬ</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">КОНТАКТЫ</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="menu__btn">
+                    <span class="menu__btn-line"></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+
+        <section class="main-slider swiper-container page-section">
+            <div class="main-slider__container swiper-wrapper">
+                <div class="main-slider__item swiper-slide">
+                    <div class="main-slider__image">
+                        <img class="main-slider__img" src="images/112.jpg" alt="">
+                    </div>
+
+                    <div class="main-slider__offer">
+                        <h2 class="main-slider__title">
+                            Ловите чудесные моменты
+                            вместе с базой отдыха
+                        </h2>
+                        <picture>
+                            <source media="(max-width: 544px)" srcset="images/Aviator-mini.png">
+                                <img class="main-slider__logo" src="images/Логотип Aviator.png" alt="">
+                        </picture>
+
+                        <button class="main-slider__btn">
+                            ЗАБРОНИРОВАТЬ
+                        </button>
+                    </div>
+                </div>
+
+                <div class="main-slider__item swiper-slide">
+                    <div class="main-slider__image">
+                        <img class="main-slider__img" src="images/slide01.jpg" alt="">
+                    </div>
+
+                    <div class="main-slider__offer">
+                        <h2 class="main-slider__title">
+                            Отдых с максимальным погружением и комфортом с
+                        </h2>
+
+                        <img class="main-slider__logo" src="images/Логотип Aviator.png" alt="">
+
+                        <button class="main-slider__btn">
+                            ЗАБРОНИРОВАТЬ
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main-slider__button-next">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9 28">
+                    <path
+                        d="M9.297 15c0 0.125-0.063 0.266-0.156 0.359l-7.281 7.281c-0.094 0.094-0.234 0.156-0.359 0.156s-0.266-0.063-0.359-0.156l-0.781-0.781c-0.094-0.094-0.156-0.219-0.156-0.359 0-0.125 0.063-0.266 0.156-0.359l6.141-6.141-6.141-6.141c-0.094-0.094-0.156-0.234-0.156-0.359s0.063-0.266 0.156-0.359l0.781-0.781c0.094-0.094 0.234-0.156 0.359-0.156s0.266 0.063 0.359 0.156l7.281 7.281c0.094 0.094 0.156 0.234 0.156 0.359z">
+                    </path>
+                </svg>
+            </div>
+            <div class="main-slider__button-prev">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11 28">
+                    <path
+                        d="M9.797 8.5c0 0.125-0.063 0.266-0.156 0.359l-6.141 6.141 6.141 6.141c0.094 0.094 0.156 0.234 0.156 0.359s-0.063 0.266-0.156 0.359l-0.781 0.781c-0.094 0.094-0.234 0.156-0.359 0.156s-0.266-0.063-0.359-0.156l-7.281-7.281c-0.094-0.094-0.156-0.234-0.156-0.359s0.063-0.266 0.156-0.359l7.281-7.281c0.094-0.094 0.234-0.156 0.359-0.156s0.266 0.063 0.359 0.156l0.781 0.781c0.094 0.094 0.156 0.219 0.156 0.359z">
+                    </path>
+                </svg>
+            </div>
+        </section>
+
+        <section class="products page-section">
+            <div class="container">
+                <h2 class="page-title">
+                    КОТТЕДЖИ НА БАЗЕ ОТДЫХА AVIATOR
+                </h2>
+                <h4 class="page-subtitle">
+                    Мы предлагаем следующие варианты размещения
+                </h4>
+
+                <div class="products__grid">
+                    <article class="products__item">
+                        <div class="products__image">
+                            <a class="products__link" href="#">
+                                <img class="products__img" src="images/slide1.jpg" alt="">
+                            </a>
+                        </div>
+
+                        <div class="products__descr">
+                            <h3 class="products__descr-title">
+                                КОТТЕДЖ НА 6-Х
+                            </h3>
+
+                            <div class="products__descr-text">
+                                <p>
+                                    Уютный коттедж на 6-х человек расположен в сосновом парке. Жилая площадь
+                                    составляет более 100 м2. Коттедж располагает придомовой террасой, беседкой и
+                                    территорией около дома. Вид на озеро подарит вам ощущение единства с
+                                    природой.
+                                </p>
+                            </div>
+
+                            <a class="products__descr-btn" href="#">подробнее</a>
+                        </div>
+                    </article>
+
+                    <article class="products__item">
+                        <div class="products__image">
+                            <a class="products__link" href="#">
+                                <img class="products__img" src="images/slide2jpg.jpg" alt="">
+                            </a>
+                        </div>
+
+                        <div class="products__descr">
+                            <h3 class="products__descr-title">
+                                КОТТЕДЖ НА 4-Х
+                            </h3>
+
+                            <div class="products__descr-text">
+                                <p>
+                                    Уютный коттедж на 4-х человек (2+2) . В домике вы найдете всё необходимое для
+                                    комфортного отдыха. Отдельная спальня с двуспальной кроватью. Небольшая гостиная.
+                                    Кухня с обеденным столом. Ванная комната с душевой кабиной. Встроенная сауна.
+                                </p>
+                            </div>
+
+                            <a class="products__descr-btn" href="#">подробнее</a>
+                        </div>
+                    </article>
+
+                    <article class="products__item">
+                        <div class="products__image">
+                            <a class="products__link" href="#">
+                                <img class="products__img" src="images/slide3.jpg" alt="">
+                            </a>
+                        </div>
+
+                        <div class="products__descr">
+                            <h3 class="products__descr-title">
+                                КОТТЕДЖ НА 2-Х
+                            </h3>
+
+                            <div class="products__descr-text">
+                                <p>
+                                    Уютный коттедж на 2-х человек. В домике вы найдете всё необходимое для комфортного
+                                    отдыха. Cпальня с двуспальной кроватью. Небольшая гостиная. Кухня с обеденным
+                                    столом. Ванная комната с душевой кабиной.
+                                </p>
+                            </div>
+
+                            <a class="products__descr-btn" href="#">подробнее</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="services page-section">
+            <div class="container">
+                <h2 class="page-title">
+                    НАШИ УСЛУГИ
+                </h2>
+                <h4 class="page-subtitle">
+                    AVIATOR предлагает слудующие услуги
+                </h4>
+
+
+                <div class="services__slider-preview-wrapper">
+                    <div class="services__slider-preview-item">
+                        <img class="services__slider-preview-img" src="images/resto.jpg" alt="">
+                    </div>
+                    <div class="services__slider-preview-item">
+                        <img class="services__slider-preview-img" src="images/home_switcher_03.jpg" alt="">
+                    </div>
+                    <div class="services__slider-preview-item">
+                        <img class="services__slider-preview-img" src="images/laser21.jpg" alt="">
+                    </div>
+                    <div class="services__slider-preview-item">
+                        <img class="services__slider-preview-img" src="images/home_switcher_05.jpg" alt="">
+                    </div>
+                    <div class="services__slider-preview-item">
+                        <img class="services__slider-preview-img" src="images/fac07753d55333345d2c491e8e72e5dd.jpg"
+                            alt="">
+                    </div>
+                    <div class="services__slider-preview-item">
+                        <img class="services__slider-preview-img" src="images/kak-organizovat-vecherinku-na-prirode.jpg"
+                            alt="">
+                    </div>
+                </div>
+
+                <div class="services__slider-main-wrapper">
+                    <div class="services__slider-main-item">
+                        <div class="services__slider-main-image">
+                            <img class="services__slider-main-img" src="images/resto.jpg" alt="">
+                        </div>
+
+                        <div class="services__slider-main-descr">
+                            <h4 class="services__slider-main-title">
+                                РЕСТОРАН
+                            </h4>
+
+                            <div class="services__slider-main-text">
+                                <p>
+                                    В нашем Eco ресторане Вы сможете попробовать блюда европейской, итальянской и
+                                    русской кухни. Для приготовления всех блюд мы используем исключительно отборную
+                                    продукцию.
+                                </p>
+                            </div>
+
+                            <a class="products__descr-btn" href="#">подробнее</a>
+                        </div>
+                    </div>
+
+                    <div class="services__slider-main-item">
+                        <div class="services__slider-main-image">
+                            <img class="services__slider-main-img" src="images/home_switcher_03.jpg" alt="">
+                        </div>
+
+                        <div class="services__slider-main-descr">
+                            <h4 class="services__slider-main-title">
+                                ВЕЛОСИПЕДЫ
+                            </h4>
+
+                            <div class="services__slider-main-text">
+                                <p>
+                                    Заезд на велосипеде по одному из самых живописных уголков Карельского перешейка подарит вам массу приятных впечатлений, а также разнообразит ваш отдых. У нас вы можете выбрать абсолютно любой маршрут от катания на территории базы, до самостоятельного изучения её окрестностей.
+                                </p>
+                            </div>
+
+                            <a class="products__descr-btn" href="#">подробнее</a>
+                        </div>
+                    </div>
+
+                    <div class="services__slider-main-item">
+                        <div class="services__slider-main-image">
+                            <img class="services__slider-main-img" src="images/laser21.jpg" alt="">
+                        </div>
+
+                        <div class="services__slider-main-descr">
+                            <h4 class="services__slider-main-title">
+                                РУССКАЯ БАНЯ
+                            </h4>
+
+                            <div class="services__slider-main-text">
+                                <p>
+                                    Баня на компанию до 20 человек с русской парной, финской сауной, русским бильярдом и караоке. В пользование гостей предоставляется: полотенца, простыни, набор посуды, столовых приборов, электрический чайник, холодильник.
+                                </p>
+                            </div>
+
+                            <a class="products__descr-btn" href="#">подробнее</a>
+                        </div>
+                    </div>
+
+                    <div class="services__slider-main-item">
+                        <div class="services__slider-main-image">
+                            <img class="services__slider-main-img" src="images/home_switcher_05.jpg" alt="">
+                        </div>
+
+                        <div class="services__slider-main-descr">
+                            <h4 class="services__slider-main-title">
+                                ПРОКАТ ЛОДОК
+                            </h4>
+
+                            <div class="services__slider-main-text">
+                                <p>
+                                    Eco Village располагается на побережье Правдинского озера. В летний сезон на базе действует прокат гребных лодок. Любители рыбалки могут дополнительно арендовать удочки и спиннинги.
+                                </p>
+                            </div>
+
+                            <a class="products__descr-btn" href="#">подробнее</a>
+                        </div>
+                    </div>
+
+                    <div class="services__slider-main-item">
+                        <div class="services__slider-main-image">
+                            <img class="services__slider-main-img" src="images/fac07753d55333345d2c491e8e72e5dd.jpg" alt="">
+                        </div>
+
+                        <div class="services__slider-main-descr">
+                            <h4 class="services__slider-main-title">
+                                ПРОВЕДЕНИЕ СВАДЕБ
+                            </h4>
+
+                            <div class="services__slider-main-text">
+                                <p>
+                                    Проведите церемонию бракосочетания на свежем воздухе и с прекраснейшими видами. Легкость и красота вашей свадьбы не оставить равнодушной не одну подругу невесты.
+                                </p>
+                            </div>
+
+                            <a class="products__descr-btn" href="#">подробнее</a>
+                        </div>
+                    </div>
+
+                    <div class="services__slider-main-item">
+                        <div class="services__slider-main-image">
+                            <img class="services__slider-main-img" src="images/kak-organizovat-vecherinku-na-prirode.jpg" alt="">
+                        </div>
+
+                        <div class="services__slider-main-descr">
+                            <h4 class="services__slider-main-title">
+                                ПРОВЕДЕНИЕ ВЕЧЕРИНОК
+                            </h4>
+
+                            <div class="services__slider-main-text">
+                                <p>
+                                    На территории базы отдыха, регулярно проводятся бесплатные вечеринки под открытым небом или шатром, на которыех есть диджей с музыкой на любой вкус и ярким освещением. 
+                                </p>
+                            </div>
+
+                            <a class="products__descr-btn" href="#">подробнее</a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <section class="gallery page-section">
+            <div class="container">
+
+                <h2 class="page-title">
+                    ГАЛЕРЕЯ
+                </h2>
+                <h4 class="page-subtitle">
+                    Фотографии быза отдыха AVIATOR
+                </h4>
+
+                <div id="lightgallery" class="gallery__grid">
+
+                    <a class="gallery__link" href="images/gallery/slide01.jpg">
+                        <img class="gallery__img" src="images/gallery/slide1.jpg" alt="">
+                    </a>
+
+                    <a class="gallery__link" href="images/gallery/slide2-big.jpg">
+                        <img class="gallery__img" src="images/gallery/slide2.jpg" alt="">
+                    </a>
+
+                    <a class="gallery__link" href="images/gallery/slide3-big.jpg">
+                        <img class="gallery__img" src="images/gallery/slide3.jpg" alt="">
+                    </a>
+
+                    <a class="gallery__link" href="images/gallery/slide4-big.jpg">
+                        <img class="gallery__img" src="images/gallery/slide4.jpg" alt="">
+                    </a>
+
+                    <a class="gallery__link" href="images/gallery/slide5-big.jpg">
+                        <img class="gallery__img" src="images/gallery/slide5.jpg" alt="">
+                    </a>
+
+                    <a class="gallery__link" href="images/gallery/slide6-big.jpg">
+                        <img class="gallery__img" src="images/gallery/slide6.jpg" alt="">
+                    </a>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="about page-section">
+            <div class="container">
+                <h2 class="page-title page-title__about">
+                    О НАС
+                </h2>
+
+                <h4 class="about__title">
+                    «AVIATOR» - БАЗА ОТДЫХА В ТАМБОВСКОЙ ОБЛАСТИ
+                </h4>
+
+                <p class="about__text">
+                    База отдыха «AVIATOR» — это райский уголок, где каждый из вас сможет найти себе занятие по душе. Она
+                    расположена в уникальной природной зоне — на берегу Правдинского озера. Здесь вы сможете
+                    почувствовать себя максимально раскрепощенно, поскольку объект находится в очень живописном районе,
+                    который вас поразит своими красотами, чистейшим воздухом и неповторимыми пейзажами — всеми этими
+                    прелестями обладает база отдыха. Город Тамбов располагается совсем рядом, все главные объекты
+                    инфраструктуры — тоже.
+                </p>
+
+                <h4 class="about__title">
+                    ОТДЫХ РЯДОМ С ТАМБОВОМ
+                </h4>
+
+                <p class="about__text">
+                    Дешево, с высоким комфортом вы можете провести здесь свободное время, не покидая родные края. От
+                    Тамбова можно легко добраться до базы отдыха AVIATOR на любом транспортном средстве, что идеально
+                    для занятых клиентов, которые предпочитают отдыхать в своем регионе, не покидая Тамбовскую область.
+                </p>
+            </div>
+        </section>
+
+        <section class="buy page-section">
+            <div class="buy__inner">
+                <img class="buy__img" src="images/buy.jpg" alt="">
+
+                <button class="main-slider__btn buy__btn">
+                    ЗАБРОНИРОВАТЬ
+                </button>
+            </div>
+        </section>
+
+        <section class="contacts page-section">
+            <div class="container">
+                <div class="contacts__inner">
+                    <div class="contacts__item">
+                        <h3 class="contacts__item-title">
+                            РАСПОЛОЖЕНИЕ
+                        </h3>
+
+                        <div class="contacts__item-map">
+                            <div style="position:relative;overflow:hidden;"><a
+                                    href="https://yandex.ru/maps/org/aviator/201355573132/?utm_medium=mapframe&utm_source=maps"
+                                    style="color:#eee;font-size:12px;position:absolute;top:0px;">Авиатор</a><a
+                                    href="https://yandex.ru/maps/10802/tambov-oblast/category/tourist_resort/184106426/?utm_medium=mapframe&utm_source=maps"
+                                    style="color:#eee;font-size:12px;position:absolute;top:14px;">Турбаза в Тамбовской
+                                    области</a><a
+                                    href="https://yandex.ru/maps/10802/tambov-oblast/category/bathhouse/35325140238/?utm_medium=mapframe&utm_source=maps"
+                                    style="color:#eee;font-size:12px;position:absolute;top:28px;">Баня в Тамбовской
+                                    области</a><iframe src="https://yandex.ru/map-widget/v1/-/CCUQUZawOA" width="560"
+                                    height="400" frameborder="1" allowfullscreen="true"
+                                    style="position:relative;"></iframe></div>
+                        </div>
+                    </div>
+
+                    <div class="contacts__item">
+                        <h3 class="contacts__item-title">
+                            КОНТАКТЫ
+                        </h3>
+
+                        <div class="contacts__item-address">
+                            <h4 class="contacts__address-title">
+                                ТЕЛЕФОН
+                            </h4>
+                            <ul class="contacts__address-list">
+                                <li class="contacts__address-item">
+                                    <a class="contacts__address-link" href="tel:+79807831249">+7 (980) 783-12-49</a>
+                                </li>
+                                <li class="contacts__address-item">
+                                    <a class="contacts__address-link" href="tel:+79107563696">+7 (910) 756-36-96</a>
+                                </li>
+                            </ul>
+
+                            <h4 class="contacts__address-title">
+                                СОЦИАЛЬНЫЕ СЕТИ
+                            </h4>
+                            <ul class="contacts__social-list">
+                                <li class="contacts__social-item">
+                                    <a class="contacts__social-link" href="#">
+                                        <svg width="44" height="44" viewBox="0 0 44 44" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M25.391 23.2195C25.657 23.2195 28.203 24.5475 28.313 24.7355C28.344 24.8135 28.344 24.9075 28.344 24.9695C28.344 25.3605 28.219 25.7975 28.078 26.1575C27.719 27.0325 26.265 27.5945 25.375 27.5945C24.625 27.5945 23.078 26.9385 22.406 26.6255C20.172 25.6095 18.781 23.8755 17.437 21.8915C16.843 21.0165 16.312 19.9385 16.328 18.8605V18.7355C16.359 17.7045 16.734 16.9695 17.484 16.2665C17.718 16.0475 17.968 15.9225 18.296 15.9225C18.483 15.9225 18.671 15.9695 18.874 15.9695C19.296 15.9695 19.374 16.0945 19.53 16.5005C19.639 16.7665 20.436 18.8915 20.436 19.0475C20.436 19.6415 19.358 20.3135 19.358 20.6725C19.358 20.7505 19.389 20.8285 19.436 20.9065C19.78 21.6405 20.436 22.4845 21.03 23.0475C21.749 23.7355 22.514 24.1885 23.389 24.6255C23.498 24.6885 23.608 24.7345 23.733 24.7345C24.202 24.7345 24.983 23.2185 25.389 23.2185L25.391 23.2195ZM22.219 31.5005C27.625 31.5005 32.031 27.0945 32.031 21.6885C32.031 16.2825 27.625 11.8765 22.219 11.8765C16.813 11.8765 12.407 16.2825 12.407 21.6885C12.407 23.7515 13.063 25.7665 14.282 27.4385L13.048 31.0795L16.829 29.8765C18.423 30.9235 20.313 31.5015 22.22 31.5015L22.219 31.5005ZM22.219 9.90649C28.719 9.90649 34 15.1875 34 21.6875C34 28.1875 28.719 33.4685 22.219 33.4685C20.235 33.4685 18.266 32.9685 16.516 31.9995L10 34.0935L12.125 27.7655C11.016 25.9375 10.438 23.8275 10.438 21.6875C10.438 15.1875 15.719 9.90649 22.219 9.90649Z"
+                                                fill="black" />
+                                            <rect x="1" y="1" width="42" height="42" rx="4" stroke="black"
+                                                stroke-width="2" />
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="contacts__social-item">
+                                    <a class="contacts__social-link" href="">
+                                        <svg width="44" height="44" viewBox="0 0 44 44" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M25.999 22C25.999 19.6207 24.202 17.68 21.999 17.68C19.796 17.68 17.999 19.6207 17.999 22C17.999 24.3792 19.796 26.32 21.999 26.32C24.202 26.32 25.999 24.3792 25.999 22ZM28.155 22C28.155 25.6785 25.405 28.6485 21.999 28.6485C18.593 28.6485 15.843 25.6785 15.843 22C15.843 18.3215 18.593 15.3515 21.999 15.3515C25.405 15.3515 28.155 18.3215 28.155 22ZM29.843 15.0815C29.843 15.9422 29.202 16.6334 28.406 16.6334C27.61 16.6334 26.969 15.9412 26.969 15.0815C26.969 14.2218 27.61 13.5295 28.406 13.5295C29.202 13.5295 29.843 14.2218 29.843 15.0815ZM21.999 11.3684C20.249 11.3684 16.499 11.2162 14.921 11.8912C14.374 12.1277 13.968 12.4139 13.546 12.8696C13.124 13.3254 12.858 13.7639 12.64 14.3546C12.015 16.0589 12.156 20.1089 12.156 21.9989C12.156 23.8889 12.015 27.9389 12.64 29.6431C12.859 30.2339 13.124 30.6724 13.546 31.1281C13.968 31.5839 14.374 31.8712 14.921 32.1066C16.499 32.7816 20.249 32.6293 21.999 32.6293C23.749 32.6293 27.499 32.7816 29.077 32.1066C29.624 31.8701 30.03 31.5839 30.452 31.1281C30.874 30.6724 31.14 30.2339 31.358 29.6431C31.983 27.9389 31.842 23.8889 31.842 21.9989C31.842 20.1089 31.983 16.0589 31.358 14.3546C31.139 13.7639 30.874 13.3254 30.452 12.8696C30.03 12.4139 29.624 12.1266 29.077 11.8912C27.499 11.2162 23.749 11.3684 21.999 11.3684ZM33.999 22C33.999 23.7885 34.015 25.5607 33.921 27.3492C33.827 29.425 33.39 31.2642 31.984 32.7827C30.578 34.3012 28.875 34.7742 26.953 34.8747C25.297 34.9762 23.656 34.9589 22 34.9589C20.344 34.9589 18.703 34.9762 17.047 34.8747C15.125 34.7731 13.422 34.3012 12.016 32.7827C10.61 31.2642 10.172 29.425 10.079 27.3492C9.98503 25.5607 10.001 23.7885 10.001 22C10.001 20.2115 9.98503 18.4392 10.079 16.6507C10.173 14.575 10.61 12.7357 12.016 11.2172C13.422 9.69875 15.125 9.22571 17.047 9.12527C18.703 9.02375 20.344 9.04103 22 9.04103C23.656 9.04103 25.297 9.02375 26.953 9.12527C28.875 9.22679 30.578 9.69875 31.984 11.2172C33.39 12.7357 33.828 14.575 33.921 16.6507C34.015 18.4392 33.999 20.2115 33.999 22Z"
+                                                fill="black" />
+                                            <rect x="1" y="1" width="42" height="42" rx="4" stroke="black"
+                                                stroke-width="2" />
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="contacts__social-item">
+                                    <a class="contacts__social-link" href="">
+                                        <svg width="44" height="44" viewBox="0 0 44 44" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M39.9494 13.446C40.2301 14.1947 39.3496 15.9467 37.1376 18.8119C33.5017 23.5203 33.1082 23.0823 36.1072 25.8015C38.9933 28.4109 39.5931 29.6712 39.6867 29.8347C39.6867 29.8347 40.8863 31.8788 38.3564 31.8975L33.558 31.9711C32.5276 32.172 31.1589 31.2598 31.1589 31.2598C29.3595 30.0555 27.6729 26.9345 26.3606 27.3363C26.3606 27.3363 25.011 27.7556 25.0482 30.5671C25.0674 31.1698 24.7675 31.498 24.7675 31.498C24.7675 31.498 24.4305 31.8449 23.7743 31.8998H21.6186C16.8767 32.1919 12.6962 27.939 12.6962 27.939C12.6962 27.939 8.12218 23.3393 4.11198 14.1596C3.84927 13.5569 4.13118 13.2649 4.13118 13.2649C4.13118 13.2649 4.41188 12.918 5.2 12.918L10.3354 12.8818C10.8224 12.9554 11.1607 13.21 11.1607 13.21C11.1607 13.21 11.4606 13.4109 11.6106 13.794C12.4539 15.8381 13.5407 17.7 13.5407 17.7C15.4156 21.4599 16.6896 22.0988 17.4201 21.7145C17.4201 21.7145 18.3762 21.1492 18.1698 16.6044C18.0943 14.9621 17.6264 14.2134 17.6264 14.2134C17.1958 13.648 16.3897 13.4833 16.0334 13.4284C15.7527 13.3922 16.2205 12.7346 16.8395 12.4426C17.7584 12.0046 19.3886 11.9859 21.3187 12.0046C22.8374 12.0233 23.2681 12.1144 23.8487 12.2417C25.6288 12.661 25.029 14.2671 25.029 18.1368C25.029 19.3773 24.7855 21.1118 25.7032 21.6772C26.0967 21.933 27.0719 21.7134 29.4711 17.735C29.4711 17.735 30.5963 15.8369 31.4768 13.6282C31.6267 13.2264 31.9458 13.0629 31.9458 13.0629C31.9458 13.0629 32.2457 12.8982 32.6584 12.9531L38.0565 12.9168C39.6867 12.7159 39.9494 13.446 39.9494 13.446V13.446Z"
+                                                fill="black" />
+                                            <rect x="1" y="1" width="42" height="42" rx="4" stroke="black"
+                                                stroke-width="2" />
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <img class="footer__img-bg" src="images/footer-bg.jpg" alt="">
+
+        <div class="container">
+            <ul class="footer__address-list">
+                <li class="footer__address-item">
+                    Адрес
+                    <p class="footer__address-text">
+                        Россия, Тамбовская область, Тамбовский район, Татановский сельсовет
+                    </p>
+                </li>
+
+                <li class="footer__address-item">
+                    Телефон
+                    <a class="footer__address-link" href="tel:+79807831249">+7 (980) 783-12-49</a>
+                    <a class="footer__address-link" href="tel:+79107563696">+7 (910) 756-36-96</a>
+                </li>
+            </ul>
+
+            <ul class="footer__social-list">
+                <li class="footer__social-item">
+                    <a class="footer__social-link" href="#">
+                        <svg width="40" height="25" viewBox="0 0 40 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M39.6356 2.56105C39.945 3.43098 38.9743 5.46669 36.5354 8.79576C32.5267 14.2664 32.0929 13.7575 35.3993 16.9169C38.5815 19.9488 39.2428 21.4131 39.3459 21.6031C39.3459 21.6031 40.6685 23.9781 37.8792 23.9998L32.5889 24.0853C31.4528 24.3188 29.9437 23.2588 29.9437 23.2588C27.9598 21.8596 26.1003 18.2333 24.6534 18.7002C24.6534 18.7002 23.1655 19.1874 23.2065 22.4541C23.2276 23.1543 22.897 23.5357 22.897 23.5357C22.897 23.5357 22.5253 23.9388 21.8019 24.0026H19.4252C14.197 24.3418 9.58785 19.4005 9.58785 19.4005C9.58785 19.4005 4.54485 14.0561 0.123465 3.39026C-0.16618 2.68998 0.144626 2.35069 0.144626 2.35069C0.144626 2.35069 0.45411 1.94762 1.32305 1.94762L6.98501 1.90555C7.52198 1.99105 7.89495 2.28691 7.89495 2.28691C7.89495 2.28691 8.22559 2.52034 8.39092 2.96548C9.32069 5.34048 10.5189 7.50376 10.5189 7.50376C12.5861 11.8724 13.9907 12.6148 14.7962 12.1683C14.7962 12.1683 15.8503 11.5114 15.6228 6.23076C15.5395 4.32262 15.0237 3.45269 15.0237 3.45269C14.5489 2.79584 13.6601 2.60448 13.2673 2.54069C12.9578 2.49862 13.4736 1.73455 14.156 1.39526C15.1691 0.886335 16.9665 0.864621 19.0946 0.886335C20.7689 0.90805 21.2438 1.01391 21.8839 1.16184C23.8466 1.64905 23.1853 3.51512 23.1853 8.01134C23.1853 9.45262 22.9168 11.468 23.9286 12.1248C24.3624 12.4221 25.4377 12.1669 28.0828 7.54448C28.0828 7.54448 29.3234 5.33912 30.2942 2.77276C30.4595 2.30591 30.8113 2.11591 30.8113 2.11591C30.8113 2.11591 31.142 1.92455 31.5969 1.98834L37.5485 1.94626C39.3459 1.71284 39.6356 2.56105 39.6356 2.56105Z"
+                                fill="white" />
+                        </svg>
+                    </a>
+                </li>
+                <li class="footer__social-item">
+                    <a class="footer__social-link" href="#">
+                        <svg width="32" height="31" viewBox="0 0 32 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0)">
+                                <path
+                                    d="M16.1914 2.76166C20.3328 2.76166 20.823 2.78007 22.4515 2.85273C23.9656 2.91957 24.7823 3.17338 25.3277 3.38554C26.0484 3.66454 26.5687 4.0036 27.1073 4.54223C27.6527 5.08763 27.985 5.60204 28.2698 6.32279C28.4819 6.8682 28.7358 7.69066 28.8026 9.19901C28.8752 10.8343 28.8937 11.3244 28.8937 15.46C28.8937 19.5956 28.8752 20.0916 28.8026 21.7211C28.7358 23.2352 28.4819 24.0519 28.2698 24.5973C27.9908 25.318 27.6527 25.8383 27.1131 26.3769C26.5677 26.9223 26.0533 27.2546 25.3335 27.5394C24.7881 27.7515 23.9647 28.0054 22.4573 28.0722C20.822 28.1448 20.3318 28.1633 16.1962 28.1633C12.0607 28.1633 11.5647 28.1448 9.93522 28.0722C8.42106 28.0054 7.60441 27.7515 7.059 27.5394C6.33825 27.2604 5.81803 26.9223 5.27844 26.3827C4.73303 25.8373 4.40075 25.3229 4.11594 24.6031C3.90378 24.0577 3.64997 23.2343 3.58312 21.7269C3.51047 20.0916 3.49206 19.6014 3.49206 15.4659C3.49206 11.3303 3.51047 10.8343 3.58312 9.20482C3.64997 7.69066 3.90378 6.87401 4.11594 6.3286C4.39494 5.60785 4.734 5.08763 5.27262 4.54804C5.81803 4.00263 6.33244 3.67035 7.05319 3.38554C7.59859 3.17338 8.42106 2.91957 9.92941 2.85273C11.5579 2.78007 12.049 2.76166 16.1904 2.76166H16.1914ZM16.1914 -0.0293047C11.9832 -0.0293047 11.4571 -0.0108984 9.80347 0.0617578C8.15659 0.134414 7.02413 0.40082 6.04375 0.782508C5.02075 1.18163 4.15469 1.70863 3.29541 2.5747C2.42934 3.43495 1.90234 4.30004 1.50322 5.31723C1.12153 6.30438 0.855125 7.43007 0.782469 9.07695C0.709812 10.7364 0.691406 11.2624 0.691406 15.4707C0.691406 19.6789 0.709812 20.205 0.782469 21.8586C0.855125 23.5055 1.12153 24.638 1.50322 25.6184C1.90331 26.6414 2.42934 27.5074 3.29541 28.3667C4.15469 29.226 5.02075 29.7598 6.03794 30.1531C7.02509 30.5348 8.15078 30.8012 9.79766 30.8738C11.4503 30.9465 11.9773 30.9649 16.1856 30.9649C20.3938 30.9649 20.9208 30.9465 22.5735 30.8738C24.2204 30.8012 25.3529 30.5348 26.3333 30.1531C27.3504 29.7598 28.2165 29.2269 29.0758 28.3667C29.9351 27.5064 30.4688 26.6414 30.8622 25.6242C31.2438 24.637 31.5103 23.5113 31.5829 21.8644C31.6556 20.2118 31.674 19.6848 31.674 15.4765C31.674 11.2683 31.6556 10.7422 31.5829 9.08857C31.5103 7.4417 31.2438 6.30923 30.8622 5.32885C30.4805 4.29907 29.9535 3.43398 29.0884 2.57373C28.2291 1.71445 27.363 1.18066 26.3458 0.787352C25.3587 0.405664 24.233 0.139258 22.5861 0.0666016C20.9276 -0.0118672 20.4006 -0.0302734 16.1924 -0.0302734L16.1914 -0.0293047Z"
+                                    fill="white" />
+                                <path
+                                    d="M16.1914 7.53809C11.7962 7.53809 8.22925 11.1041 8.22925 15.5002C8.22925 19.8964 11.7952 23.4624 16.1914 23.4624C20.5876 23.4624 24.1536 19.8964 24.1536 15.5002C24.1536 11.105 20.5876 7.53809 16.1914 7.53809ZM16.1914 20.6646C13.3394 20.6646 11.027 18.3522 11.027 15.5002C11.027 12.6482 13.3394 10.3358 16.1914 10.3358C19.0434 10.3358 21.3558 12.6482 21.3558 15.5002C21.3558 18.3522 19.0434 20.6646 16.1914 20.6646Z"
+                                    fill="white" />
+                                <path
+                                    d="M26.3265 7.22317C26.3265 8.25005 25.4943 9.08221 24.4674 9.08221C23.4406 9.08221 22.6084 8.25005 22.6084 7.22317C22.6084 6.1963 23.4406 5.36414 24.4674 5.36414C25.4943 5.36414 26.3265 6.1963 26.3265 7.22317Z"
+                                    fill="white" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0">
+                                    <rect width="31" height="31" fill="white" transform="translate(0.691406)" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </a>
+                </li>
+                <li class="footer__social-item">
+                    <a class="footer__social-link" href="#">
+                        <svg width="32" height="31" viewBox="0 0 32 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M27.1713 4.50469C24.2566 1.59844 20.381 0 16.2493 0C7.74266 0 0.818938 6.88975 0.818938 15.3605C0.818938 18.0672 1.53059 20.7128 2.88184 23.0378L0.691406 31L8.87487 28.8629C11.1325 30.0855 13.6695 30.7336 16.2493 30.7336H16.2552C24.7618 30.7336 31.6914 23.8429 31.6914 15.3731C31.6914 11.2675 30.0851 7.41094 27.1704 4.50469H27.1713ZM16.2561 28.1422C13.9499 28.1422 11.6923 27.5251 9.72086 26.3626L9.2526 26.0836L4.39762 27.3488L5.69338 22.6378L5.38867 22.1534C4.09875 20.1248 3.42312 17.7756 3.42312 15.3605C3.42312 8.31866 9.17861 2.59141 16.262 2.59141C19.6878 2.59141 22.9121 3.92344 25.3343 6.33272C27.7564 8.74878 29.0882 11.9515 29.0882 15.3663C29.0824 22.414 23.3259 28.1422 16.2561 28.1422ZM23.2899 18.5758C22.9063 18.382 21.0079 17.4559 20.6555 17.328C20.3031 17.2002 20.0471 17.1343 19.7852 17.5218C19.5301 17.9035 18.7873 18.7695 18.5624 19.0292C18.3375 19.283 18.1127 19.3198 17.7291 19.126C17.3455 18.9323 16.0984 18.5264 14.6255 17.2186C13.4816 16.2014 12.7028 14.942 12.4779 14.5603C12.253 14.1786 12.4536 13.9665 12.6483 13.7795C12.8245 13.61 13.0318 13.331 13.2265 13.1072C13.4212 12.8834 13.4816 12.7255 13.6101 12.4659C13.7376 12.2121 13.6773 11.9873 13.5799 11.7936C13.4826 11.5998 12.7096 9.71075 12.3932 8.94156C12.0826 8.19078 11.7604 8.29347 11.5229 8.28184C11.298 8.27022 11.0419 8.27022 10.7869 8.27022C10.5318 8.27022 10.1112 8.36709 9.75883 8.74878C9.40544 9.13047 8.40855 10.0624 8.40855 11.9515C8.40855 13.8405 9.78998 15.6628 9.98469 15.9233C10.1794 16.1772 12.7047 20.0589 16.5745 21.7174C17.4935 22.1108 18.211 22.3471 18.7708 22.5283C19.6956 22.8189 20.5358 22.7763 21.1987 22.6794C21.9406 22.5699 23.4807 21.7533 23.8029 20.8572C24.1252 19.9611 24.1252 19.1919 24.0278 19.035C23.9363 18.8654 23.6812 18.7686 23.2918 18.5748L23.2899 18.5758Z"
+                                fill="white" />
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+
+            <p class="footer__copy">
+                © 2012 AVIATOR - база отдыха в Тамбовской области
+            </p>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="js/lightgallery.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
