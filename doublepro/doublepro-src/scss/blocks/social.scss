@@ -1,0 +1,26 @@
+.social {
+    display: flex;
+
+    &--mr {
+        margin-right: 30px;
+    }
+
+    @include breakpoint($tablet-bp) {
+        display: none;
+    }
+}
+
+.social__item {
+    & + & {
+        margin-left: 10px;
+    }
+}
+
+.social__link {
+    transition: opacity .1s linear;
+
+    &:hover {
+        opacity: .50;
+    }
+}
+
