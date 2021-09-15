@@ -14,26 +14,31 @@
     <div class="container">
       <div class="header__inner">
         <nav class="menu">
+
+          <div class="menu__btn">
+            <span class="menu__btn-line"></span>
+          </div>
+
           <ul class="menu__list">
             <li class="menu__item">
-              <a class="menu__link" href="#">Для отелей и хостелов</a>
+              <a class="menu__link" href="#about">Для отелей и хостелов</a>
             </li>
 
             <li class="menu__item">
-              <a class="menu__link" href="#">для ресторанов</a>
+              <a class="menu__link" href="#products">для ресторанов</a>
             </li>
 
             <li class="menu__item">
-              <a class="menu__link" href="#">для фитнес клубов</a>
+              <a class="menu__link" href="#section-slider">для фитнес клубов</a>
             </li>
 
             <li class="menu__item">
-              <a class="menu__link" href="#">для салонов красоты и спа</a>
+              <a class="menu__link" href="#clients">для салонов красоты и спа</a>
             </li>
           </ul>
         </nav>
 
-        <button class="btn btn--heading">Перезвоните мне</button>
+        <button class="btn btn--heading js-btn-callback">Перезвоните мне</button>
       </div>
     </div>
   </header>
@@ -42,7 +47,7 @@
       <section class="first-screen" style="background-image: url(images/first-screen-bg.jpg);">
         <div class="container">
           <div class="first-screen__head">
-            <a class="logo" href="#">
+            <a class="logo" href="/">
               <img src="images/logo-big.svg" alt="Логотип">
             </a>
 
@@ -246,15 +251,15 @@
             </div>
 
             <div class="first-screen__btns">
-              <button class="btn btn--main first-screen__btn">рассчитать стоимость</button>
+              <button class="btn btn--main first-screen__btn js-btn-calc">рассчитать стоимость</button>
 
-              <a class="btn btn--trans" href="#">ПОДРОБНЕЕ</a>
+              <a class="btn btn--trans js-btn-callback" href="#">ПОДРОБНЕЕ</a>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="about">
+      <section id="about" class="about">
         <div class="container">
           <div class="about__inner">
             <div class="about__lside">
@@ -593,7 +598,7 @@
         </div>
       </section>
 
-      <section class="products">
+      <section id="products" class="products">
         <div class="container">
           <div class="products__head">
             <div class="products__title section-title">
@@ -601,7 +606,7 @@
               с бесплатной доставкой по Москве и МО
             </div>
 
-            <button class="btn btn--main btn--main-smlp">
+            <button class="btn btn--main btn--main-smlp js-btn-callback">
               получить коммерческое предложение
             </button>
           </div>
@@ -625,7 +630,7 @@
                   </p>
                 </div>
 
-                <button class="btn btn--trans btn--trans-sml">
+                <button class="btn btn--trans btn--trans-sml js-btn-callback">
                   подробнее
 
                   <svg width="14" height="9" viewBox="0 0 14 9" xmlns="http://www.w3.org/2000/svg">
@@ -654,7 +659,7 @@
                   </p>
                 </div>
 
-                <button class="btn btn--trans btn--trans-sml">
+                <button class="btn btn--trans btn--trans-sml js-btn-callback">
                   подробнее
 
                   <svg width="14" height="9" viewBox="0 0 14 9" xmlns="http://www.w3.org/2000/svg">
@@ -683,7 +688,7 @@
                   </p>
                 </div>
 
-                <button class="btn btn--trans btn--trans-sml">
+                <button class="btn btn--trans btn--trans-sml js-btn-callback">
                   подробнее
 
                   <svg width="14" height="9" viewBox="0 0 14 9" xmlns="http://www.w3.org/2000/svg">
@@ -712,7 +717,7 @@
                   </p>
                 </div>
 
-                <button class="btn btn--trans btn--trans-sml">
+                <button class="btn btn--trans btn--trans-sml js-btn-callback">
                   подробнее
 
                   <svg width="14" height="9" viewBox="0 0 14 9" xmlns="http://www.w3.org/2000/svg">
@@ -726,7 +731,7 @@
         </div>
       </section>
 
-      <section class="section-form" style="background-image: url(images/form-bg-1.jpg);">
+      <section id="section-slider" class="section-form" style="background-image: url(images/form-bg-1.jpg);">
         <div class="container">
           <div class="section-form__inner">
             <div class="section-form__title section-title">
@@ -864,7 +869,7 @@
         </div>
       </section>
 
-      <section class="clients">
+      <section id="clients" class="clients">
         <div class="container">
           <div class="clients__head">
             <div class="clients__title section-title">
@@ -874,17 +879,21 @@
             <span class="clients__head-info">Выберите ваш вид деятельности</span>
           </div>
 
-          <div class="tabs">
-            <button class="tabs__button tabs__button--active" type="button">Для ресторанов, кафе и общепита</button>
-            <button class="tabs__button" type="button">Для гостниц, хостелов</button>
-            <button class="tabs__button" type="button">Для медицинских учреждений</button>
-            <button class="tabs__button" type="button">Для транспортных компаний</button>
-            <button class="tabs__button" type="button">Для вооруженных сил и структур</button>
-            <button class="tabs__button" type="button">Для спортклубов, СПА, салонов, парикмахерских, саун и
-              т.д.</button>
-            <button class="tabs__button" type="button">Для производства, фабрик, СТО</button>
-            <button class="tabs__button" type="button">Аренда белья и униформы</button>
+          <div class="tabs-wrapper">
+            <div class="tabs">
+              <button class="tabs__button tabs__button--active" type="button">Для ресторанов, кафе и
+                общепита</button>
+              <button class="tabs__button" type="button">Для гостниц, хостелов</button>
+              <button class="tabs__button" type="button">Для медицинских учреждений</button>
+              <button class="tabs__button" type="button">Для транспортных компаний</button>
+              <button class="tabs__button" type="button">Для вооруженных сил и структур</button>
+              <button class="tabs__button" type="button">Для спортклубов, СПА, салонов, парикмахерских, саун и
+                т.д.</button>
+              <button class="tabs__button" type="button">Для производства, фабрик, СТО</button>
+              <button class="tabs__button" type="button">Аренда белья и униформы</button>
+            </div>
           </div>
+
 
           <div class="tab-box">
             <div class="tab-content tab-content--active">
@@ -925,7 +934,7 @@
                     </li>
                   </ul>
 
-                  <button class="btn btn--main">рассчитать стоимость</button>
+                  <button class="btn btn--main js-btn-calc">рассчитать стоимость</button>
                 </div>
               </div>
             </div>
@@ -968,7 +977,7 @@
                     </li>
                   </ul>
 
-                  <button class="btn btn--main">рассчитать стоимость</button>
+                  <button class="btn btn--main js-btn-calc">рассчитать стоимость</button>
                 </div>
               </div>
             </div>
@@ -1011,7 +1020,7 @@
                     </li>
                   </ul>
 
-                  <button class="btn btn--main">рассчитать стоимость</button>
+                  <button class="btn btn--main js-btn-calc">рассчитать стоимость</button>
                 </div>
               </div>
             </div>
@@ -1054,7 +1063,7 @@
                     </li>
                   </ul>
 
-                  <button class="btn btn--main">рассчитать стоимость</button>
+                  <button class="btn btn--main js-btn-calc">рассчитать стоимость</button>
                 </div>
               </div>
             </div>
@@ -1097,7 +1106,7 @@
                     </li>
                   </ul>
 
-                  <button class="btn btn--main">рассчитать стоимость</button>
+                  <button class="btn btn--main js-btn-calc">рассчитать стоимость</button>
                 </div>
               </div>
             </div>
@@ -1140,7 +1149,7 @@
                     </li>
                   </ul>
 
-                  <button class="btn btn--main">рассчитать стоимость</button>
+                  <button class="btn btn--main js-btn-calc">рассчитать стоимость</button>
                 </div>
               </div>
             </div>
@@ -1183,7 +1192,7 @@
                     </li>
                   </ul>
 
-                  <button class="btn btn--main">рассчитать стоимость</button>
+                  <button class="btn btn--main js-btn-calc">рассчитать стоимость</button>
                 </div>
               </div>
             </div>
@@ -1226,7 +1235,7 @@
                     </li>
                   </ul>
 
-                  <button class="btn btn--main">рассчитать стоимость</button>
+                  <button class="btn btn--main js-btn-calc">рассчитать стоимость</button>
                 </div>
               </div>
             </div>
@@ -1379,7 +1388,7 @@
         </div>
       </section>
 
-      <section class="section-form" style="background-image: url(images/form-bg-2.jpg);">
+      <section class="section-form section-form-2" style="background-image: url(images/form-bg-2.jpg);">
         <div class="container">
           <div class="section-form__inner section-form__inner--right">
             <div class="section-form__title section-title">
@@ -1614,7 +1623,7 @@
             </svg>
           </div>
 
-          <button class="btn btn--main btn--main-center">Перезвоните мне</button>
+          <button class="btn btn--main btn--main-center js-btn-callback">Перезвоните мне</button>
         </div>
       </section>
 
@@ -1637,7 +1646,8 @@
 
             <div class="contacts__btns">
 
-              <div class="contacts__btns-title">Выберите филиал:</div>
+              <!-- <div class="contacts__btns-title">Выберите филиал:</div> -->
+              <div class="contacts__btns-title">Наши филиалы:</div>
 
               <div class="contacts__btns-grid">
                 <button class="contacts__btn">
@@ -1666,7 +1676,7 @@
               </div>
             </div>
 
-            <button class="btn btn--main btn--main-d-block">
+            <button class="btn btn--main btn--main-d-block js-btn-callback">
               заказать обратный звонок менеджера
             </button>
           </div>
@@ -1814,7 +1824,7 @@
           </nav>
 
           <div class="footer__col-3">
-            <button class="btn btn--main btn--main-d-block btn--footer">Перезвоните мне</button>
+            <button class="btn btn--main btn--main-d-block btn--footer js-btn-callback">Перезвоните мне</button>
 
             <div class="feedback feedback--footer">
               <div class="feedback__lside feedback__lside--margin">
@@ -1870,9 +1880,10 @@
 
               <div class="feedback__rside">
                 <a class="feedback__tel" href="tel:+79771953716">+7 (977) 195-37-16</a>
-                <a class="feedback__mail feedback__mail--footer" href="mailto:INFO@CLEANITEASY.RU">INFO@CLEANITEASY.RU</a>
+                <a class="feedback__mail feedback__mail--footer"
+                  href="mailto:INFO@CLEANITEASY.RU">INFO@CLEANITEASY.RU</a>
                 <div class="footer__address"><span>г. Москва,</span> Автомобильный проезд, д. 8</div>
-                 <span class="feedback__span">График работы: 09:00 - 22:00</span>
+                <span class="feedback__span">График работы: 09:00 - 22:00</span>
               </div>
             </div>
           </div>
@@ -1880,7 +1891,92 @@
       </div>
     </footer>
   </div>
-  
+
+
+  <div class="popup-overlay"></div>
+  <div id="popup-callback" class="popup">
+    <div class="popup-close">
+      <svg width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="23" cy="23" r="23" fill="white" />
+        <g opacity="0.8">
+          <path
+            d="M27.6666 19.2733L26.7266 18.3333L23 22.06L19.2733 18.3333L18.3333 19.2733L22.06 23L18.3333 26.7266L19.2733 27.6666L23 23.94L26.7266 27.6666L27.6666 26.7266L23.94 23L27.6666 19.2733Z"
+            fill="black" fill-opacity="0.54" />
+        </g>
+      </svg>
+    </div>
+
+    <div class="popup__content">
+      <div class="popup__title">
+        Заказать обратный звонок
+      </div>
+
+      <div class="popup__content-form">
+        <form class="form">
+          <label class="form__label">
+            <span class="form__span">Введите имя:</span>
+            <input class="form__input" type="text" placeholder="Например: Константин">
+          </label>
+
+          <label class="form__label">
+            <span class="form__span">Введите телефон:</span>
+            <input class="form__input" type="tel" placeholder="+7 (000) 000 - 00 - 00">
+          </label>
+
+          <div class="form__text">
+            <p>
+              Менеджер свяжется с вами для уточнения деталей заказа в течение 30 минут
+            </p>
+          </div>
+
+          <button class="btn btn--main btn--main-d-block" type="submit">заказать</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+    <div id="popup-calc" class="popup">
+      <div class="popup-close">
+        <svg width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="23" cy="23" r="23" fill="white" />
+          <g opacity="0.8">
+            <path
+              d="M27.6666 19.2733L26.7266 18.3333L23 22.06L19.2733 18.3333L18.3333 19.2733L22.06 23L18.3333 26.7266L19.2733 27.6666L23 23.94L26.7266 27.6666L27.6666 26.7266L23.94 23L27.6666 19.2733Z"
+              fill="black" fill-opacity="0.54" />
+          </g>
+        </svg>
+      </div>
+
+      <div class="popup__content">
+        <div class="popup__title">
+          Заявка на рассчет стоимости
+        </div>
+
+        <div class="popup__content-form">
+          <form class="form">
+            <label class="form__label">
+              <span class="form__span">Введите имя:</span>
+              <input class="form__input" type="text" placeholder="Например: Константин">
+            </label>
+
+            <label class="form__label">
+              <span class="form__span">Введите телефон:</span>
+              <input class="form__input" type="tel" placeholder="+7 (000) 000 - 00 - 00">
+            </label>
+
+            <div class="form__text">
+              <p>
+                Менеджер свяжется с вами для уточнения деталей заказа в течение 30 минут
+              </p>
+            </div>
+
+            <button class="btn btn--main btn--main-d-block" type="submit">заказать расчет стоимости</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+  <script src="js/scrollreveal.min.js"></script>
   <script src="js/swiper-bundle.min.js"></script>
   <script src="js/main.min.js"></script>
 </body>
