@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Parus</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/slick.css" />
+    <link rel="stylesheet" href="css/jquery.fancybox.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__container">
+          <nav class="header__nav">
+            <ul class="header__nav-list">
+              <li class="header__nav-item">
+                <a class="header__nav-link" href="#">Поселок</a>
+              </li>
+
+              <li class="header__nav-item">
+                <a class="header__nav-link" href="#">особенности</a>
+              </li>
+
+              <li class="header__nav-item">
+                <a class="header__nav-link" href="#">участки</a>
+              </li>
+
+              <li class="header__nav-item">
+                <a class="header__nav-link" href="#">информация</a>
+              </li>
+
+              <li class="header__nav-item">
+                <a class="header__nav-link" href="#">контакты</a>
+              </li>
+            </ul>
+          </nav>
+
+          <a class="header__logo logo" href="#">
+            <svg
+              width="122"
+              height="42"
+              viewBox="0 0 122 42"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0.96 2.64V36H4.944V6.672H15.408V36H19.44V2.64H0.96ZM32.6775 2.64H28.6455C26.1975 13.776 23.7975 24.912 21.3975 36.048H25.3815L26.9655 28.848L31.1895 30.096C33.4455 30.912 35.0775 32.688 35.5575 34.8L35.6535 35.04L35.8455 36.048H39.8775C37.4775 24.912 35.0775 13.776 32.6775 2.64ZM32.4855 26.304L27.8295 24.912C28.7415 20.592 29.7015 16.224 30.6135 11.904C31.7175 16.896 32.7735 21.888 33.8775 26.88C33.4455 26.64 32.9655 26.448 32.4855 26.304ZM50.763 2.64H50.619H41.835V36H45.819V24.96L53.019 22.848C57.291 21.36 60.219 17.52 60.315 13.248C60.411 7.968 56.187 3.36 50.763 2.64ZM51.771 19.056L45.819 20.784V6.624H50.379C53.739 7.152 56.331 9.984 56.283 13.152C56.235 15.744 54.411 18.096 51.771 19.056ZM73.9091 2.64L68.6291 14.736L63.3971 2.64H59.4131L66.6611 19.344L59.4131 36.048H63.3971L68.6291 23.952L70.6451 19.344L77.8931 2.64H73.9091ZM103.714 32.352L105.25 31.056L102.658 27.984L101.122 29.328C98.7221 31.296 95.7461 32.448 92.6741 32.448C85.4261 32.448 79.5221 26.544 79.5221 19.296C79.5221 12.048 85.4261 6.192 92.6741 6.192C95.7461 6.192 98.7221 7.296 101.122 9.312L102.658 10.608L105.25 7.536L103.714 6.24C100.594 3.6 96.7061 2.16 92.6741 2.16C88.1141 2.16 83.7941 3.936 80.5781 7.2C77.3141 10.464 75.5381 14.736 75.5381 19.296C75.5381 28.752 83.2181 36.432 92.6741 36.432C96.7061 36.432 100.594 34.992 103.714 32.352Z"
+                fill="#404040"
+              />
+              <path
+                d="M115.98 12.098C115.215 12.098 114.51 11.972 113.866 11.72C113.232 11.468 112.676 11.1133 112.2 10.656C111.734 10.1987 111.37 9.662 111.108 9.046C110.847 8.43 110.716 7.758 110.716 7.03C110.716 6.31133 110.847 5.644 111.108 5.028C111.37 4.412 111.734 3.88 112.2 3.432C112.676 2.97467 113.232 2.62 113.866 2.368C114.51 2.116 115.215 1.99 115.98 1.99C116.736 1.99 117.436 2.116 118.08 2.368C118.734 2.62 119.298 2.97467 119.774 3.432C120.25 3.88 120.619 4.412 120.88 5.028C121.151 5.644 121.286 6.31133 121.286 7.03C121.286 7.758 121.151 8.43 120.88 9.046C120.619 9.662 120.25 10.1987 119.774 10.656C119.298 11.1133 118.734 11.468 118.08 11.72C117.436 11.972 116.736 12.098 115.98 12.098ZM115.98 11.37C116.82 11.37 117.576 11.188 118.248 10.824C118.93 10.4507 119.466 9.942 119.858 9.298C120.26 8.64467 120.46 7.898 120.46 7.058C120.46 6.45133 120.348 5.88667 120.124 5.364C119.9 4.84133 119.588 4.384 119.186 3.992C118.785 3.59067 118.309 3.28267 117.758 3.068C117.217 2.844 116.624 2.732 115.98 2.732C115.336 2.732 114.744 2.844 114.202 3.068C113.67 3.28267 113.204 3.586 112.802 3.978C112.401 4.37 112.093 4.82733 111.878 5.35C111.664 5.87267 111.556 6.43267 111.556 7.03C111.556 7.63667 111.664 8.206 111.878 8.738C112.093 9.26067 112.401 9.718 112.802 10.11C113.204 10.502 113.67 10.81 114.202 11.034C114.744 11.258 115.336 11.37 115.98 11.37ZM113.712 3.936H116.442C116.825 3.936 117.161 4.03867 117.45 4.244C117.749 4.44933 117.982 4.71067 118.15 5.028C118.318 5.336 118.402 5.658 118.402 5.994C118.402 6.246 118.356 6.49333 118.262 6.736C118.169 6.96933 118.038 7.17933 117.87 7.366C117.702 7.54333 117.506 7.67867 117.282 7.772L118.724 10.096H117.226L115.938 8.024H115.042V10.096H113.712V3.936ZM116.33 6.918C116.564 6.918 116.746 6.83867 116.876 6.68C117.016 6.512 117.086 6.28333 117.086 5.994C117.086 5.686 117.007 5.45733 116.848 5.308C116.699 5.15867 116.517 5.084 116.302 5.084H115.042V6.918H116.33Z"
+                fill="#404040"
+              />
+            </svg>
+          </a>
+
+          <div class="header__contacts">
+            <a class="header__tel" href="tel:89202222064"> 8 920 222 20 64 </a>
+
+            <button class="header__btn btn">заказать звонок</button>
+          </div>
+        </div>
+      </header>
+
+      <main class="page">
+        <section class="first-screen">
+          <div class="first-screen__container">
+            <h1
+              class="first-screen__title rellax"
+              data-rellax-speed="-5"
+              data-rellax-zindex="5"
+            >
+              клубный поселок
+            </h1>
+          </div>
+        </section>
+
+        <section class="parallax-screen">
+          <img
+            class="rellax parallax-screen__img"
+            data-rellax-speed="-3"
+            src="img/paralax-bg.jpg"
+            alt=""
+          />
+        </section>
+
+        <section class="info-block">
+          <div class="info-block__container">
+            <div class="info-block__images">
+              <img
+                class="rellax"
+                src="img/info-img-1.jpg"
+                data-rellax-speed="3"
+                alt=""
+              />
+              <img
+                class="rellax"
+                src="img/info-img-2.jpg"
+                data-rellax-speed="7"
+                alt=""
+              />
+            </div>
+
+            <div class="info-block__content">
+              <div class="info-block__content-lside">
+                <div class="info-block__title">
+                  экологный благоустроенный безопасный современный
+                </div>
+              </div>
+
+              <div class="info-block__content-rside">
+                <a class="info-block__content-video" href="#">
+                  <svg
+                    width="270"
+                    height="273"
+                    viewBox="0 0 270 273"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <rect width="270" height="273" rx="135" fill="#D2C5A1" />
+                    <path
+                      d="M143.865 134.122C144.209 134.307 144.495 134.579 144.695 134.909C144.895 135.239 145 135.616 145 136C145 136.383 144.895 136.76 144.695 137.09C144.495 137.421 144.209 137.693 143.865 137.878L129.248 145.735C128.914 145.915 128.538 146.006 128.157 146C127.776 145.994 127.404 145.891 127.076 145.701C126.748 145.511 126.476 145.242 126.288 144.918C126.099 144.594 126 144.228 126 143.856V128.143C126 127.771 126.099 127.405 126.288 127.081C126.477 126.758 126.749 126.488 127.077 126.298C127.405 126.109 127.778 126.006 128.159 126C128.54 125.994 128.916 126.086 129.249 126.265L143.866 134.122H143.865Z"
+                      fill="#404040"
+                    />
+                  </svg>
+                </a>
+
+                <div class="info-block__content-text">
+                  <p>
+                    «Парус» - экологичное, благоустроенное и безопасное место
+                    как для отдыха, так и для постоянного проживания. Поселок
+                    находится в удобной транспортной доступности от Воронежа,
+                    что позволяет без труда добраться из любой точки города
+                    практически за считанные минуты.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="info-block info-block--black">
+          <div class="info-block__container">
+            <div class="info-block__images">
+              <img
+                class="rellax fly-img__top-left"
+                data-rellax-speed="3"
+                src="img/info-img-2.jpg"
+                alt=""
+              />
+              <img
+                class="rellax fly-img__top-right"
+                data-rellax-speed="10"
+                src="img/info-img-1.jpg"
+                alt=""
+              />
+            </div>
+
+            <div class="info-block__content info-block__content--black">
+              <div class="info-block__content-lside">
+                <div
+                  class="rellax info-block__title info-block__title--white"
+                  data-rellax-speed="-1"
+                >
+                  Максимальный уровень психологического комфорта и защищенности
+                </div>
+              </div>
+            </div>
+
+            <div class="info-block__images">
+              <img
+                class="rellax fly-img__top-left"
+                data-rellax-speed="3"
+                src="img/info-img-2.jpg"
+                alt=""
+              />
+              <img
+                class="rellax fly-img__top-right"
+                data-rellax-speed="10"
+                src="img/info-img-1.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+        </section>
+
+        <section class="info-block">
+          <div class="info-block__container">
+            <div class="info-block__images">
+              <img
+                class="rellax fly-img__top-left"
+                data-rellax-speed="1"
+                src="img/info-img-2.jpg"
+                alt=""
+              />
+              <img
+                class="rellax fly-img__top-right fly-img__bottom-right"
+                data-rellax-speed="5"
+                src="img/info-img-1.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+
+          <div class="info-block__slider">
+            <div class="info-block__slide">
+              <div
+                class="info-block__slide-wrapper"
+                style="background-image: url(/img/slider-1.jpg)"
+              >
+                <div class="info-block__slide-title">детские площадки</div>
+              </div>
+              <div class="info-block__slide-text">Концептуальные зоны</div>
+            </div>
+
+            <div class="info-block__slide">
+              <div
+                class="info-block__slide-wrapper"
+                style="background-image: url(/img/slider-1.jpg)"
+              >
+                <div class="info-block__slide-title">детские площадки</div>
+              </div>
+              <div class="info-block__slide-text">Концептуальные зоны</div>
+            </div>
+
+            <div class="info-block__slide">
+              <div
+                class="info-block__slide-wrapper"
+                style="background-image: url(/img/slider-1.jpg)"
+              >
+                <div class="info-block__slide-title">детские площадки</div>
+              </div>
+              <div class="info-block__slide-text">Концептуальные зоны</div>
+            </div>
+
+            <div class="info-block__slide">
+              <div
+                class="info-block__slide-wrapper"
+                style="background-image: url(/img/slider-1.jpg)"
+              >
+                <div class="info-block__slide-title">детские площадки</div>
+              </div>
+              <div class="info-block__slide-text">Концептуальные зоны</div>
+            </div>
+          </div>
+
+          <div class="info-block__container">
+            <div class="info-block__pricebox">
+              <div class="info-block__pricebox-lside">
+                <div class="info-block__pricebox-title">
+                  650.000₽ <span>Сотка</span>
+                </div>
+
+                <div class="info-block__pricebox-lside-content">
+                  <a class="info-block__pricebox-link btn" href="#">
+                    Условия <br />
+                    покупки\ипотека
+                  </a>
+
+                  <div class="info-block__pricebox-text">
+                    Клубный поселок «Парус» - экологичное, благоустроенное и
+                    безопасное место как для отдыха, так и для постоянного
+                    проживания. Поселок находится в удобной транспортной
+                    доступности от Воронежа, что позволяет без труда добраться
+                    из любой точки города практически за считанные минуты.
+                  </div>
+                </div>
+              </div>
+              <div class="info-block__pricebox-rside">
+                <a class="info-block__pricebox-rside-link" href="#">
+                  Беспроцентная рассрочка <br />
+                  платежа
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="vacant-lots">
+          <div class="vacant-lots__container">
+            <a class="vacant-lots__link" href="#">
+              <div class="vacant-lots__title">Свободные участки</div>
+              <img src="img/map-lots.jpg" alt="" />
+            </a>
+          </div>
+        </section>
+
+        <section class="pre-footer-info">
+          <a class="pre-footer-info__pa-link btn" href="#">
+            контактная <br />
+            информация
+          </a>
+          <div class="pre-footer-info__container">
+            <div class="pre-footer-info__inner">
+              <div class="pre-footer-info__lside">
+                <a class="pre-footer-info__entry" href="#">
+                  записаться на просмотр
+                </a>
+                <a
+                  class="pre-footer-info__map-link"
+                  href="#"
+                  style="background-image: url(img/map-link.jpg)"
+                >
+                  <div class="">посмотреть на карте</div>
+
+                  <span>
+                    <svg
+                      width="130"
+                      height="130"
+                      viewBox="0 0 130 130"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <rect width="130" height="130" rx="65" fill="#404040" />
+                      <path
+                        d="M76.3459 52.0631L64.2183 64.1907L66.7486 66.721L78.8762 54.5934L78.8762 65.4558L82.454 65.4558L82.454 48.4853L65.4835 48.4853L65.4835 52.0631L76.3459 52.0631Z"
+                        fill="#D2C5A1"
+                      />
+                      <path
+                        d="M54.5916 78.8783L66.7192 66.7507L64.1889 64.2204L52.0613 76.348L52.0613 65.4856L48.4835 65.4856L48.4835 82.4561L65.454 82.4561L65.454 78.8783L54.5916 78.8783Z"
+                        fill="#D2C5A1"
+                      />
+                    </svg>
+                  </span>
+                </a>
+              </div>
+              <div class="pre-footer-info__rside">
+                <form class="pre-footer-info__form">
+                  <div class="pre-footer-info__form-title">Есть вопросы?</div>
+
+                  <label clas="pre-footer-info__form-label">
+                    <input
+                      class="pre-footer-info__form-input"
+                      type="text"
+                      placeholder="Ваше имя"
+                    />
+                    <span class="pre-footer-info__form-span"></span>
+                  </label>
+
+                  <div class="pre-footer-info__form-line">
+                    <label clas="pre-footer-info__form-label">
+                      <input
+                        class="pre-footer-info__form-input"
+                        type="text"
+                        placeholder="Телефон"
+                      />
+                      <span class="pre-footer-info__form-span"></span>
+                    </label>
+
+                    <label clas="pre-footer-info__form-label">
+                      <input
+                        class="pre-footer-info__form-input"
+                        type="text"
+                        placeholder="E-mail"
+                      />
+                      <span class="pre-footer-info__form-span"></span>
+                    </label>
+                  </div>
+
+                  <textarea
+                    class="pre-footer-info__form-input"
+                    cols="30"
+                    rows="10"
+                    placeholder="Укажите удобное время для звонка или просто задайте интересующий вас вопрос"
+                  ></textarea>
+
+                  <div class="pre-footer-info__form-footer">
+                    <div class="pre-footer-info__form-text">
+                      Нажимая на кнопку «Отправить заявку», я соглашаюсь
+                      <a href="#"> с условиями передачи информации </a>
+                    </div>
+                    <button class="pre-footer-info__form-btn">
+                      <svg
+                        width="130"
+                        height="130"
+                        viewBox="0 0 130 130"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <rect
+                          x="1"
+                          y="1"
+                          width="128"
+                          height="128"
+                          rx="64"
+                          stroke="#D2C5A1"
+                          stroke-width="2"
+                        />
+                        <path
+                          d="M69.9369 67.3772L57.8093 55.2496L55.279 57.7799L67.4066 69.9075L56.5442 69.9075L56.5442 73.4853L73.5147 73.4853L73.5147 56.5147L69.9369 56.5147L69.9369 67.3772Z"
+                          fill="#D2C5A1"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="footer__container">
+          <div class="footer__top">
+            <a class="logo footer__logo" href="#">
+              <svg
+                width="122"
+                height="42"
+                viewBox="0 0 122 42"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M0.96 2.64V36H4.944V6.672H15.408V36H19.44V2.64H0.96ZM32.6775 2.64H28.6455C26.1975 13.776 23.7975 24.912 21.3975 36.048H25.3815L26.9655 28.848L31.1895 30.096C33.4455 30.912 35.0775 32.688 35.5575 34.8L35.6535 35.04L35.8455 36.048H39.8775C37.4775 24.912 35.0775 13.776 32.6775 2.64ZM32.4855 26.304L27.8295 24.912C28.7415 20.592 29.7015 16.224 30.6135 11.904C31.7175 16.896 32.7735 21.888 33.8775 26.88C33.4455 26.64 32.9655 26.448 32.4855 26.304ZM50.763 2.64H50.619H41.835V36H45.819V24.96L53.019 22.848C57.291 21.36 60.219 17.52 60.315 13.248C60.411 7.968 56.187 3.36 50.763 2.64ZM51.771 19.056L45.819 20.784V6.624H50.379C53.739 7.152 56.331 9.984 56.283 13.152C56.235 15.744 54.411 18.096 51.771 19.056ZM73.9091 2.64L68.6291 14.736L63.3971 2.64H59.4131L66.6611 19.344L59.4131 36.048H63.3971L68.6291 23.952L70.6451 19.344L77.8931 2.64H73.9091ZM103.714 32.352L105.25 31.056L102.658 27.984L101.122 29.328C98.7221 31.296 95.7461 32.448 92.6741 32.448C85.4261 32.448 79.5221 26.544 79.5221 19.296C79.5221 12.048 85.4261 6.192 92.6741 6.192C95.7461 6.192 98.7221 7.296 101.122 9.312L102.658 10.608L105.25 7.536L103.714 6.24C100.594 3.6 96.7061 2.16 92.6741 2.16C88.1141 2.16 83.7941 3.936 80.5781 7.2C77.3141 10.464 75.5381 14.736 75.5381 19.296C75.5381 28.752 83.2181 36.432 92.6741 36.432C96.7061 36.432 100.594 34.992 103.714 32.352Z"
+                  fill="#404040"
+                />
+                <path
+                  d="M115.98 12.098C115.215 12.098 114.51 11.972 113.866 11.72C113.232 11.468 112.676 11.1133 112.2 10.656C111.734 10.1987 111.37 9.662 111.108 9.046C110.847 8.43 110.716 7.758 110.716 7.03C110.716 6.31133 110.847 5.644 111.108 5.028C111.37 4.412 111.734 3.88 112.2 3.432C112.676 2.97467 113.232 2.62 113.866 2.368C114.51 2.116 115.215 1.99 115.98 1.99C116.736 1.99 117.436 2.116 118.08 2.368C118.734 2.62 119.298 2.97467 119.774 3.432C120.25 3.88 120.619 4.412 120.88 5.028C121.151 5.644 121.286 6.31133 121.286 7.03C121.286 7.758 121.151 8.43 120.88 9.046C120.619 9.662 120.25 10.1987 119.774 10.656C119.298 11.1133 118.734 11.468 118.08 11.72C117.436 11.972 116.736 12.098 115.98 12.098ZM115.98 11.37C116.82 11.37 117.576 11.188 118.248 10.824C118.93 10.4507 119.466 9.942 119.858 9.298C120.26 8.64467 120.46 7.898 120.46 7.058C120.46 6.45133 120.348 5.88667 120.124 5.364C119.9 4.84133 119.588 4.384 119.186 3.992C118.785 3.59067 118.309 3.28267 117.758 3.068C117.217 2.844 116.624 2.732 115.98 2.732C115.336 2.732 114.744 2.844 114.202 3.068C113.67 3.28267 113.204 3.586 112.802 3.978C112.401 4.37 112.093 4.82733 111.878 5.35C111.664 5.87267 111.556 6.43267 111.556 7.03C111.556 7.63667 111.664 8.206 111.878 8.738C112.093 9.26067 112.401 9.718 112.802 10.11C113.204 10.502 113.67 10.81 114.202 11.034C114.744 11.258 115.336 11.37 115.98 11.37ZM113.712 3.936H116.442C116.825 3.936 117.161 4.03867 117.45 4.244C117.749 4.44933 117.982 4.71067 118.15 5.028C118.318 5.336 118.402 5.658 118.402 5.994C118.402 6.246 118.356 6.49333 118.262 6.736C118.169 6.96933 118.038 7.17933 117.87 7.366C117.702 7.54333 117.506 7.67867 117.282 7.772L118.724 10.096H117.226L115.938 8.024H115.042V10.096H113.712V3.936ZM116.33 6.918C116.564 6.918 116.746 6.83867 116.876 6.68C117.016 6.512 117.086 6.28333 117.086 5.994C117.086 5.686 117.007 5.45733 116.848 5.308C116.699 5.15867 116.517 5.084 116.302 5.084H115.042V6.918H116.33Z"
+                  fill="#404040"
+                />
+              </svg>
+            </a>
+
+            <a class="dev-logo" href="#">
+              <img src="img/dev-design-logo.png" alt="" />
+              <svg
+                width="14"
+                height="14"
+                viewBox="0 0 11 12"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M7.13394 2.55742L0.0436766 9.64768L1.52297 11.127L8.61323 4.03672L8.61323 10.3873L10.705 10.3873L10.705 0.465698L0.783324 0.465699L0.783324 2.55742L7.13394 2.55742Z"
+                  fill="#d2c5a1"
+                />
+              </svg>
+            </a>
+
+            <div class="footer-contacts">
+              <a class="footer-contacts-tel" href="tel:89202222064"
+                >(920) 222 20 64</a
+              >
+              <div class="footer-contacts-address">
+                г. Воронеж <br> Московский пр-т, 90, офис 142
+              </div>
+            </div>
+          </div>
+
+          <div class="footer__bottom">
+            <div class="foote-bottom__item">
+              © 2019 – 2022 Коттеджный посёлок «Парус»
+            </div>
+
+            <div class="foote-bottom__item">
+              Дизайн и разработка — Vialent
+            </div>
+
+            <ul class="footer-nav-list">
+              <li>
+                <a href="">Поселок</a>
+              </li>
+
+              <li>
+                <a href="">информация</a>
+              </li>
+
+              <li>
+                <a href="">контакты</a>
+              </li>
+            </ul>
+
+            <ul class="footer-nav-list">
+              <li>
+                <a href="">Вконтакте</a>
+              </li>
+
+              <li>
+                <a href="">Телеграм</a>
+              </li>
+
+              <li>
+                <a href="">Youtube</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/rellax.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
